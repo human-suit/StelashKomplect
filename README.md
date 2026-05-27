@@ -9,11 +9,9 @@
 | [Netlify](https://www.netlify.com/) | Сайт + API routes (нужны env в панели Netlify) |
 | [Render](https://render.com/) | Полный Next.js + PostgreSQL (рекомендуется для демо) |
 
-Подробно: [docs/deploy-netlify.md](docs/deploy-netlify.md), [docs/deploy-render.md](docs/deploy-render.md).
+Подробно: [docs/deploy-netlify-render.md](docs/deploy-netlify-render.md). Продакшен: [docs/deploy-timeweb.md](docs/deploy-timeweb.md).
 
 ## Локальный запуск
-
-## Запуск
 
 ```bash
 npm install

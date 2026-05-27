@@ -1,20 +1,34 @@
+# Blueprint для Render: https://render.com/docs/blueprint-spec
+# Бесплатный web-сервис + опционально PostgreSQL (free tier с ограничениями).
+
 services:
   - type: web
-    name: stellazhkomplekt
+    name: stellazh-komplekt
     runtime: node
     plan: free
     buildCommand: npm install && npx prisma generate && npm run build
     startCommand: npm start
+    healthCheckPath: /
     envVars:
-      - key: NODE_VERSION
-        value: 20
+      - key: NODE_ENV
+        value: production
       - key: SITE_URL
         sync: false
-      - key: ADMIN_PASSWORD
-        sync: false
       - key: DATABASE_URL
+        fromDatabase:
+          name: stellazh-db
+          property: connectionString
+      - key: ADMIN_PASSWORD
         sync: false
       - key: TELEGRAM_BOT_TOKEN
         sync: false
       - key: TELEGRAM_CHAT_ID
         sync: false
+      - key: ORDER_EMAIL
+        sync: false
+
+databases:
+  - name: stellazh-db
+    plan: free
+    databaseName: stellazh_komplekt
+    user: stellazh
