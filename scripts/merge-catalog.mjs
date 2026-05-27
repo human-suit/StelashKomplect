@@ -22,12 +22,14 @@ const manifest = fs.existsSync(manifestPath)
   ? JSON.parse(fs.readFileSync(manifestPath, "utf8"))
   : {};
 
-const products = catalog.products.map(
-  ({ safeRuSlug: _, ...p }) => ({
+const products = catalog.products.map((item) => {
+  const { safeRuSlug, ...p } = item;
+  void safeRuSlug;
+  return {
     ...p,
     image: manifest[p.slug] ?? `/images/products/${p.slug}.jpg`,
-  }),
-);
+  };
+});
 
 const out = path.join(root, "src", "data", "products.generated.json");
 fs.mkdirSync(path.dirname(out), { recursive: true });

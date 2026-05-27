@@ -1,4 +1,4 @@
-import { getOrderByNumber } from "@/lib/server/orders-store";
+import { getOrderByNumber, toPublicOrderSummary } from "@/lib/server/orders-store";
 import { getYooKassaPayment } from "@/lib/server/yookassa";
 import { markPaymentSucceeded } from "@/lib/server/payments";
 import { NextResponse } from "next/server";
@@ -24,9 +24,11 @@ export async function GET(
       const paid = Number(remote.amount?.value ?? "0");
       await markPaymentSucceeded(order.orderNumber, order.paymentId, paid);
       const updated = await getOrderByNumber(order.orderNumber);
-      return NextResponse.json({ order: updated ?? order });
+      return NextResponse.json({
+        order: toPublicOrderSummary(updated ?? order),
+      });
     }
   }
 
-  return NextResponse.json({ order });
+  return NextResponse.json({ order: toPublicOrderSummary(order) });
 }

@@ -48,6 +48,28 @@ export interface StoredOrder extends OrderPayload {
   updatedAt?: string;
 }
 
+/** Публичный ответ — без телефона, адреса и состава корзины */
+export type PublicOrderSummary = Pick<
+  StoredOrder,
+  | "orderNumber"
+  | "status"
+  | "paymentStatus"
+  | "paidAmountRub"
+  | "chargeAmountRub"
+  | "createdAt"
+>;
+
+export function toPublicOrderSummary(order: StoredOrder): PublicOrderSummary {
+  return {
+    orderNumber: order.orderNumber,
+    status: order.status,
+    paymentStatus: order.paymentStatus,
+    paidAmountRub: order.paidAmountRub,
+    chargeAmountRub: order.chargeAmountRub,
+    createdAt: order.createdAt,
+  };
+}
+
 export async function createOrder(payload: OrderPayload): Promise<StoredOrder> {
   const seq = await nextOrderSequence();
   const year = new Date().getFullYear();
