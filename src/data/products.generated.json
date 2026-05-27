@@ -1,0 +1,1121 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "slug": "stellazh-ms-185kd-70x30-4",
+      "name": "Стеллаж MS Standart 185KD/70x30/4",
+      "categorySlug": "stellazhi",
+      "price": 3650,
+      "inStock": 100,
+      "isFeatured": true,
+      "specs": {
+        "Размеры": "1800×700×300 мм",
+        "Полок": "4",
+        "Вес": "9.93 кг",
+        "Гарантия": "2 года"
+      },
+      "image": "/images/products/stellazh-ms-185kd-70x30-4.jpg"
+    },
+    {
+      "id": "2",
+      "slug": "stellazh-ms-185-100x30-4",
+      "name": "Стеллаж MS Standart 185/100x30/4",
+      "categorySlug": "stellazhi",
+      "price": 3895,
+      "inStock": 100,
+      "isFeatured": true,
+      "specs": {
+        "Размеры": "1850×1000×300 мм",
+        "Полок": "4",
+        "Вес": "12.1 кг",
+        "Гарантия": "2 года"
+      },
+      "image": "/images/products/stellazh-ms-185-100x30-4.jpg"
+    },
+    {
+      "id": "3",
+      "slug": "stellazh-ms-150kd-75x40-4",
+      "name": "Стеллаж MS Standart 150KD/75x40/4",
+      "categorySlug": "stellazhi",
+      "price": 3960,
+      "inStock": 100,
+      "isFeatured": true,
+      "specs": {
+        "Размеры": "1500×750×400 мм",
+        "Полок": "4",
+        "Вес": "10.92 кг",
+        "Гарантия": "2 года"
+      },
+      "image": "/images/products/stellazh-ms-150kd-75x40-4.jpg"
+    },
+    {
+      "id": "4",
+      "slug": "stellazh-ms-200-100x30-4",
+      "name": "Стеллаж MS Standart 200/100x30/4",
+      "categorySlug": "stellazhi",
+      "price": 4235,
+      "inStock": 100,
+      "isFeatured": true,
+      "specs": {
+        "Размеры": "2000×1000×300 мм",
+        "Полок": "4",
+        "Вес": "12.39 кг",
+        "Гарантия": "2 года"
+      },
+      "image": "/images/products/stellazh-ms-200-100x30-4.jpg"
+    },
+    {
+      "id": "5",
+      "slug": "stellazh-ms-185-100x40-4",
+      "name": "Стеллаж MS Standart 185/100x40/4",
+      "categorySlug": "stellazhi",
+      "price": 4480,
+      "inStock": 100,
+      "isFeatured": true,
+      "specs": {
+        "Размеры": "1850×1000×400 мм",
+        "Полок": "4",
+        "Вес": "13 кг",
+        "Гарантия": "2 года"
+      },
+      "image": "/images/products/stellazh-ms-185-100x40-4.jpg"
+    },
+    {
+      "id": "6",
+      "slug": "stellazh-ms-200kd-100x50-4",
+      "name": "Стеллаж MS Standart 200KD/100x50/4",
+      "categorySlug": "stellazhi",
+      "price": 5380,
+      "inStock": 100,
+      "isFeatured": true,
+      "specs": {
+        "Размеры": "2000×1000×500 мм",
+        "Полок": "4",
+        "Вес": "15.87 кг",
+        "Гарантия": "2 года"
+      },
+      "image": "/images/products/stellazh-ms-200kd-100x50-4.jpg"
+    },
+    {
+      "id": "7",
+      "slug": "stellazh-ms-200-100x30-6",
+      "name": "Стеллаж MS Standart 200/100x30/6",
+      "categorySlug": "stellazhi",
+      "price": 5280,
+      "inStock": 100,
+      "specs": {
+        "Размеры": "2000×1000×300 мм",
+        "Полок": "6",
+        "Вес": "16 кг",
+        "Гарантия": "2 года"
+      },
+      "image": "/images/products/stellazh-ms-200-100x30-6.jpg"
+    },
+    {
+      "id": "8",
+      "slug": "stellazh-ms-220-100x30-6",
+      "name": "Стеллаж MS Standart 220/100x30/6",
+      "categorySlug": "stellazhi",
+      "price": 5585,
+      "inStock": 100,
+      "specs": {
+        "Размеры": "2200×1000×300 мм",
+        "Полок": "6",
+        "Вес": "16.99 кг",
+        "Гарантия": "2 года"
+      },
+      "image": "/images/products/stellazh-ms-220-100x30-6.jpg"
+    },
+    {
+      "id": "9",
+      "slug": "stellazh-ms-185-100x60-4",
+      "name": "Стеллаж MS Standart 185/100x60/4",
+      "categorySlug": "stellazhi",
+      "price": 5715,
+      "inStock": 100,
+      "specs": {
+        "Размеры": "1850×1000×600 мм",
+        "Полок": "4",
+        "Вес": "18.36 кг",
+        "Гарантия": "2 года"
+      },
+      "image": "/images/products/stellazh-ms-185-100x60-4.jpg"
+    },
+    {
+      "id": "10",
+      "slug": "stellazh-ms-200-100x40-6",
+      "name": "Стеллаж MS Standart 200/100x40/6",
+      "categorySlug": "stellazhi",
+      "price": 6160,
+      "inStock": 100,
+      "specs": {
+        "Размеры": "2000×1000×400 мм",
+        "Полок": "6",
+        "Вес": "19.01 кг",
+        "Гарантия": "2 года"
+      },
+      "image": "/images/products/stellazh-ms-200-100x40-6.jpg"
+    },
+    {
+      "id": "11",
+      "slug": "stellazh-ms-200kd-100x60-4",
+      "name": "Стеллаж MS Standart 200KD/100x60/4",
+      "categorySlug": "stellazhi",
+      "price": 6320,
+      "inStock": 100,
+      "specs": {
+        "Размеры": "2000×1000×600 мм",
+        "Полок": "4",
+        "Вес": "18.65 кг",
+        "Гарантия": "2 года"
+      },
+      "image": "/images/products/stellazh-ms-200kd-100x60-4.jpg"
+    },
+    {
+      "id": "12",
+      "slug": "stellazh-ms-220-100x60-6",
+      "name": "Стеллаж MS Standart 220/100x60/6",
+      "categorySlug": "stellazhi",
+      "price": 8315,
+      "inStock": 100,
+      "isFeatured": true,
+      "specs": {
+        "Размеры": "2200×1000×600 мм",
+        "Полок": "6",
+        "Вес": "26.38 кг",
+        "Гарантия": "2 года"
+      },
+      "image": "/images/products/stellazh-ms-220-100x60-6.jpg"
+    },
+    {
+      "id": "13",
+      "slug": "stellazh-ms-200-100x60-6",
+      "name": "Стеллаж MS Standart 200/100x60/6",
+      "categorySlug": "stellazhi",
+      "price": 8010,
+      "inStock": 100,
+      "specs": {
+        "Размеры": "2000×1000×600 мм",
+        "Полок": "6",
+        "Вес": "25 кг",
+        "Гарантия": "2 года"
+      },
+      "image": "/images/products/stellazh-ms-200-100x60-6.jpg"
+    },
+    {
+      "id": "14",
+      "slug": "stellazh-ms-220-100x40-6",
+      "name": "Стеллаж MS Standart 220/100x40/6",
+      "categorySlug": "stellazhi",
+      "price": 6470,
+      "inStock": 100,
+      "specs": {
+        "Размеры": "2200×1000×400 мм",
+        "Полок": "6",
+        "Вес": "19.57 кг",
+        "Гарантия": "2 года"
+      },
+      "image": "/images/products/stellazh-ms-220-100x40-6.jpg"
+    },
+    {
+      "id": "15",
+      "slug": "sejf-valberg-asm-30",
+      "name": "Сейф офисный VALBERG ASM-30",
+      "categorySlug": "sejfy",
+      "price": 18900,
+      "inStock": 8,
+      "specs": {
+        "Серия": "ASM",
+        "Объём": "30 л",
+        "Производитель": "Промет"
+      },
+      "image": "/images/products/sejf-valberg-asm-30.jpg"
+    },
+    {
+      "id": "16",
+      "slug": "sejf-aiko-tm-30",
+      "name": "Сейф офисный AIKO TM-30",
+      "categorySlug": "sejfy",
+      "price": 12500,
+      "inStock": 12,
+      "specs": {
+        "Серия": "TM",
+        "Объём": "30 л",
+        "Производитель": "Промет"
+      },
+      "image": "/images/products/sejf-aiko-tm-30.jpg"
+    },
+    {
+      "id": "17",
+      "slug": "shkaf-praktik-ls-21-60",
+      "name": "Шкаф для раздевалок ПРАКТИК LS 21-60",
+      "categorySlug": "lokery",
+      "price": 13100,
+      "inStock": 15,
+      "specs": {
+        "Серия": "LS",
+        "Секций": "2",
+        "Гарантия": "2 года"
+      },
+      "image": "/images/products/shkaf-praktik-ls-21-60.jpg"
+    },
+    {
+      "id": "18",
+      "slug": "shkaf-praktik-am-01",
+      "name": "Архивный шкаф ПРАКТИК AM-01",
+      "categorySlug": "shkafy",
+      "price": 9850,
+      "inStock": 20,
+      "specs": {
+        "Серия": "AM",
+        "Формат": "A4",
+        "Гарантия": "2 года"
+      },
+      "image": "/images/products/shkaf-praktik-am-01.jpg"
+    },
+    {
+      "id": "19",
+      "slug": "verstak-profi-w-150",
+      "name": "Верстак ПРАКТИК Profi W 150",
+      "categorySlug": "verstaki",
+      "price": 14200,
+      "inStock": 10,
+      "specs": {
+        "Серия": "Profi W",
+        "Длина": "1500 мм",
+        "Гарантия": "2 года"
+      },
+      "image": "/images/products/verstak-profi-w-150.jpg"
+    },
+    {
+      "id": "20",
+      "slug": "stellazh-sbe-180kd-75x35-5",
+      "name": "Стеллаж SBE 180KD/75×35/5 оцинк",
+      "categorySlug": "stellazhi",
+      "price": 2800,
+      "inStock": 50,
+      "specs": {
+        "Серия": "SBE",
+        "Полок": "5",
+        "Покрытие": "оцинковка"
+      },
+      "image": "/images/products/stellazh-sbe-180kd-75x35-5.jpg"
+    },
+    {
+      "id": "21",
+      "slug": "stellazh-ms-185kd-75x35-4",
+      "name": "Стеллаж MS Standart 185KD/75x35/4",
+      "categorySlug": "stellazhi",
+      "price": 3780,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "185KD/75×35 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-185kd-75x35-4.jpg"
+    },
+    {
+      "id": "22",
+      "slug": "stellazh-ms-185kd-70x40-4",
+      "name": "Стеллаж MS Standart 185KD/70x40/4",
+      "categorySlug": "stellazhi",
+      "price": 3920,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "185KD/70×40 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-185kd-70x40-4.jpg"
+    },
+    {
+      "id": "23",
+      "slug": "stellazh-ms-185kd-100x30-4",
+      "name": "Стеллаж MS Standart 185KD/100x30/4",
+      "categorySlug": "stellazhi",
+      "price": 4100,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "185KD/100×30 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-185kd-100x30-4.jpg"
+    },
+    {
+      "id": "24",
+      "slug": "stellazh-ms-185kd-100x40-4",
+      "name": "Стеллаж MS Standart 185KD/100x40/4",
+      "categorySlug": "stellazhi",
+      "price": 4650,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "185KD/100×40 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-185kd-100x40-4.jpg"
+    },
+    {
+      "id": "25",
+      "slug": "stellazh-ms-200kd-70x30-4",
+      "name": "Стеллаж MS Standart 200KD/70x30/4",
+      "categorySlug": "stellazhi",
+      "price": 3990,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200KD/70×30 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-200kd-70x30-4.jpg"
+    },
+    {
+      "id": "26",
+      "slug": "stellazh-ms-200kd-75x40-4",
+      "name": "Стеллаж MS Standart 200KD/75x40/4",
+      "categorySlug": "stellazhi",
+      "price": 4520,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200KD/75×40 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-200kd-75x40-4.jpg"
+    },
+    {
+      "id": "27",
+      "slug": "stellazh-ms-200kd-100x30-4",
+      "name": "Стеллаж MS Standart 200KD/100x30/4",
+      "categorySlug": "stellazhi",
+      "price": 4890,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200KD/100×30 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-200kd-100x30-4.jpg"
+    },
+    {
+      "id": "28",
+      "slug": "stellazh-ms-200kd-100x40-4",
+      "name": "Стеллаж MS Standart 200KD/100x40/4",
+      "categorySlug": "stellazhi",
+      "price": 5120,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200KD/100×40 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-200kd-100x40-4.jpg"
+    },
+    {
+      "id": "29",
+      "slug": "stellazh-ms-200-70x30-4",
+      "name": "Стеллаж MS Standart 200/70x30/4",
+      "categorySlug": "stellazhi",
+      "price": 3750,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/70×30 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-200-70x30-4.jpg"
+    },
+    {
+      "id": "30",
+      "slug": "stellazh-ms-200-75x40-4",
+      "name": "Стеллаж MS Standart 200/75x40/4",
+      "categorySlug": "stellazhi",
+      "price": 4180,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/75×40 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-200-75x40-4.jpg"
+    },
+    {
+      "id": "31",
+      "slug": "stellazh-ms-200-100x40-4",
+      "name": "Стеллаж MS Standart 200/100x40/4",
+      "categorySlug": "stellazhi",
+      "price": 4680,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×40 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-200-100x40-4.jpg"
+    },
+    {
+      "id": "32",
+      "slug": "stellazh-ms-200-100x50-4",
+      "name": "Стеллаж MS Standart 200/100x50/4",
+      "categorySlug": "stellazhi",
+      "price": 5520,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×50 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-200-100x50-4.jpg"
+    },
+    {
+      "id": "33",
+      "slug": "stellazh-ms-200-100x50-6",
+      "name": "Стеллаж MS Standart 200/100x50/6",
+      "categorySlug": "stellazhi",
+      "price": 6890,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×50 мм",
+        "Полок": "6",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-200-100x50-6.jpg"
+    },
+    {
+      "id": "34",
+      "slug": "stellazh-ms-220-100x30-4",
+      "name": "Стеллаж MS Standart 220/100x30/4",
+      "categorySlug": "stellazhi",
+      "price": 4980,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "220/100×30 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-220-100x30-4.jpg"
+    },
+    {
+      "id": "35",
+      "slug": "stellazh-ms-220-100x40-4",
+      "name": "Стеллаж MS Standart 220/100x40/4",
+      "categorySlug": "stellazhi",
+      "price": 5420,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "220/100×40 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-220-100x40-4.jpg"
+    },
+    {
+      "id": "36",
+      "slug": "stellazh-ms-220-100x50-4",
+      "name": "Стеллаж MS Standart 220/100x50/4",
+      "categorySlug": "stellazhi",
+      "price": 5980,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "220/100×50 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-220-100x50-4.jpg"
+    },
+    {
+      "id": "37",
+      "slug": "stellazh-ms-220-100x50-6",
+      "name": "Стеллаж MS Standart 220/100x50/6",
+      "categorySlug": "stellazhi",
+      "price": 7450,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "220/100×50 мм",
+        "Полок": "6",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-220-100x50-6.jpg"
+    },
+    {
+      "id": "38",
+      "slug": "stellazh-ms-255-100x40-4",
+      "name": "Стеллаж MS Standart 255/100x40/4",
+      "categorySlug": "stellazhi",
+      "price": 5890,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "255/100×40 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-255-100x40-4.jpg"
+    },
+    {
+      "id": "39",
+      "slug": "stellazh-ms-255-100x60-4",
+      "name": "Стеллаж MS Standart 255/100x60/4",
+      "categorySlug": "stellazhi",
+      "price": 7120,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "255/100×60 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-255-100x60-4.jpg"
+    },
+    {
+      "id": "40",
+      "slug": "stellazh-ms-150kd-70x30-4",
+      "name": "Стеллаж MS Standart 150KD/70x30/4",
+      "categorySlug": "stellazhi",
+      "price": 3290,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "150KD/70×30 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-150kd-70x30-4.jpg"
+    },
+    {
+      "id": "41",
+      "slug": "stellazh-ms-150kd-100x30-4",
+      "name": "Стеллаж MS Standart 150KD/100x30/4",
+      "categorySlug": "stellazhi",
+      "price": 3650,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "150KD/100×30 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-150kd-100x30-4.jpg"
+    },
+    {
+      "id": "42",
+      "slug": "stellazh-ms-185-70x30-4",
+      "name": "Стеллаж MS Standart 185/70x30/4",
+      "categorySlug": "stellazhi",
+      "price": 3520,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "185/70×30 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-185-70x30-4.jpg"
+    },
+    {
+      "id": "43",
+      "slug": "stellazh-ms-185-75x40-4",
+      "name": "Стеллаж MS Standart 185/75x40/4",
+      "categorySlug": "stellazhi",
+      "price": 4050,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "185/75×40 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-185-75x40-4.jpg"
+    },
+    {
+      "id": "44",
+      "slug": "stellazh-ms-185-100x50-4",
+      "name": "Стеллаж MS Standart 185/100x50/4",
+      "categorySlug": "stellazhi",
+      "price": 5120,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "185/100×50 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-185-100x50-4.jpg"
+    },
+    {
+      "id": "45",
+      "slug": "stellazh-ms-185-100x30-6",
+      "name": "Стеллаж MS Standart 185/100x30/6",
+      "categorySlug": "stellazhi",
+      "price": 4850,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "185/100×30 мм",
+        "Полок": "6",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-185-100x30-6.jpg"
+    },
+    {
+      "id": "46",
+      "slug": "stellazh-ms-200kd-100x30-6",
+      "name": "Стеллаж MS Standart 200KD/100x30/6",
+      "categorySlug": "stellazhi",
+      "price": 5450,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200KD/100×30 мм",
+        "Полок": "6",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-200kd-100x30-6.jpg"
+    },
+    {
+      "id": "47",
+      "slug": "stellazh-ms-200kd-100x40-6",
+      "name": "Стеллаж MS Standart 200KD/100x40/6",
+      "categorySlug": "stellazhi",
+      "price": 5980,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200KD/100×40 мм",
+        "Полок": "6",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-200kd-100x40-6.jpg"
+    },
+    {
+      "id": "48",
+      "slug": "stellazh-ms-200kd-100x50-6",
+      "name": "Стеллаж MS Standart 200KD/100x50/6",
+      "categorySlug": "stellazhi",
+      "price": 6520,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200KD/100×50 мм",
+        "Полок": "6",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-200kd-100x50-6.jpg"
+    },
+    {
+      "id": "49",
+      "slug": "stellazh-ms-200kd-100x60-6",
+      "name": "Стеллаж MS Standart 200KD/100x60/6",
+      "categorySlug": "stellazhi",
+      "price": 7890,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200KD/100×60 мм",
+        "Полок": "6",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-200kd-100x60-6.jpg"
+    },
+    {
+      "id": "50",
+      "slug": "stellazh-ms-strong-200-100x50-4",
+      "name": "Стеллаж MS Strong 200/100x50/4",
+      "categorySlug": "stellazhi",
+      "price": 6890,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×50 мм",
+        "Полок": "4",
+        "Серия": "MS Strong",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-strong-200-100x50-4.jpg"
+    },
+    {
+      "id": "51",
+      "slug": "stellazh-ms-strong-200-100x60-4",
+      "name": "Стеллаж MS Strong 200/100x60/4",
+      "categorySlug": "stellazhi",
+      "price": 7450,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×60 мм",
+        "Полок": "4",
+        "Серия": "MS Strong",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-strong-200-100x60-4.jpg"
+    },
+    {
+      "id": "52",
+      "slug": "stellazh-ms-strong-220-100x60-4",
+      "name": "Стеллаж MS Strong 220/100x60/4",
+      "categorySlug": "stellazhi",
+      "price": 8120,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "220/100×60 мм",
+        "Полок": "4",
+        "Серия": "MS Strong",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-strong-220-100x60-4.jpg"
+    },
+    {
+      "id": "53",
+      "slug": "stellazh-ms-strong-220-100x60-6",
+      "name": "Стеллаж MS Strong 220/100x60/6",
+      "categorySlug": "stellazhi",
+      "price": 9450,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "220/100×60 мм",
+        "Полок": "6",
+        "Серия": "MS Strong",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-strong-220-100x60-6.jpg"
+    },
+    {
+      "id": "54",
+      "slug": "stellazh-ms-strong-200-100x50-6",
+      "name": "Стеллаж MS Strong 200/100x50/6",
+      "categorySlug": "stellazhi",
+      "price": 8200,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×50 мм",
+        "Полок": "6",
+        "Серия": "MS Strong",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-strong-200-100x50-6.jpg"
+    },
+    {
+      "id": "55",
+      "slug": "stellazh-ms-strong-255-100x60-6",
+      "name": "Стеллаж MS Strong 255/100x60/6",
+      "categorySlug": "stellazhi",
+      "price": 10200,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "255/100×60 мм",
+        "Полок": "6",
+        "Серия": "MS Strong",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-strong-255-100x60-6.jpg"
+    },
+    {
+      "id": "56",
+      "slug": "stellazh-ms-hard-200-100x60-4",
+      "name": "Стеллаж MS Hard 200/100x60/4",
+      "categorySlug": "stellazhi",
+      "price": 8950,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×60 мм",
+        "Полок": "4",
+        "Серия": "MS Hard",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-hard-200-100x60-4.jpg"
+    },
+    {
+      "id": "57",
+      "slug": "stellazh-ms-hard-220-100x60-4",
+      "name": "Стеллаж MS Hard 220/100x60/4",
+      "categorySlug": "stellazhi",
+      "price": 9580,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "220/100×60 мм",
+        "Полок": "4",
+        "Серия": "MS Hard",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-hard-220-100x60-4.jpg"
+    },
+    {
+      "id": "58",
+      "slug": "stellazh-ms-hard-200-100x60-6",
+      "name": "Стеллаж MS Hard 200/100x60/6",
+      "categorySlug": "stellazhi",
+      "price": 10850,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×60 мм",
+        "Полок": "6",
+        "Серия": "MS Hard",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-hard-200-100x60-6.jpg"
+    },
+    {
+      "id": "59",
+      "slug": "stellazh-es-150kd-75x30-3",
+      "name": "Стеллаж ES 150KD/75x30/3",
+      "categorySlug": "stellazhi",
+      "price": 2890,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "150KD/75×30 мм",
+        "Полок": "3",
+        "Серия": "ES",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-es-150kd-75x30-3.jpg"
+    },
+    {
+      "id": "60",
+      "slug": "stellazh-es-150kd-75x30-4",
+      "name": "Стеллаж ES 150KD/75x30/4",
+      "categorySlug": "stellazhi",
+      "price": 3190,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "150KD/75×30 мм",
+        "Полок": "4",
+        "Серия": "ES",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-es-150kd-75x30-4.jpg"
+    },
+    {
+      "id": "61",
+      "slug": "stellazh-es-185kd-75x30-4",
+      "name": "Стеллаж ES 185KD/75x30/4",
+      "categorySlug": "stellazhi",
+      "price": 3450,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "185KD/75×30 мм",
+        "Полок": "4",
+        "Серия": "ES",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-es-185kd-75x30-4.jpg"
+    },
+    {
+      "id": "62",
+      "slug": "stellazh-es-75kd-75x30-3",
+      "name": "Стеллаж ES 75KD/75x30/3",
+      "categorySlug": "stellazhi",
+      "price": 2490,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "75KD/75×30 мм",
+        "Полок": "3",
+        "Серия": "ES",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-es-75kd-75x30-3.jpg"
+    },
+    {
+      "id": "63",
+      "slug": "stellazh-es-200-100x30-4",
+      "name": "Стеллаж ES 200/100x30/4",
+      "categorySlug": "stellazhi",
+      "price": 3890,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×30 мм",
+        "Полок": "4",
+        "Серия": "ES",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-es-200-100x30-4.jpg"
+    },
+    {
+      "id": "64",
+      "slug": "stellazh-sbe-180kd-90x40-5",
+      "name": "Стеллаж SBE 180KD/90x40/5",
+      "categorySlug": "stellazhi",
+      "price": 3200,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "180KD/90×40 мм",
+        "Полок": "5",
+        "Серия": "SBE",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-sbe-180kd-90x40-5.jpg"
+    },
+    {
+      "id": "65",
+      "slug": "stellazh-sbe-180kd-90x45-5",
+      "name": "Стеллаж SBE 180KD/90x45/5",
+      "categorySlug": "stellazhi",
+      "price": 3450,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "180KD/90×45 мм",
+        "Полок": "5",
+        "Серия": "SBE",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-sbe-180kd-90x45-5.jpg"
+    },
+    {
+      "id": "66",
+      "slug": "stellazh-sbe-180kd-120x40-5",
+      "name": "Стеллаж SBE 180KD/120x40/5",
+      "categorySlug": "stellazhi",
+      "price": 3600,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "180KD/120×40 мм",
+        "Полок": "5",
+        "Серия": "SBE",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-sbe-180kd-120x40-5.jpg"
+    },
+    {
+      "id": "67",
+      "slug": "stellazh-sbe-180kd-120x45-5",
+      "name": "Стеллаж SBE 180KD/120x45/5",
+      "categorySlug": "stellazhi",
+      "price": 3900,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "180KD/120×45 мм",
+        "Полок": "5",
+        "Серия": "SBE",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-sbe-180kd-120x45-5.jpg"
+    },
+    {
+      "id": "68",
+      "slug": "stellazh-ms-pro-200-100x60-5",
+      "name": "Стеллаж MS Pro 200/100x60/5",
+      "categorySlug": "stellazhi",
+      "price": 9850,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×60 мм",
+        "Полок": "5",
+        "Серия": "MS Pro",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-pro-200-100x60-5.jpg"
+    },
+    {
+      "id": "69",
+      "slug": "stellazh-ms-pro-220-100x60-5",
+      "name": "Стеллаж MS Pro 220/100x60/5",
+      "categorySlug": "stellazhi",
+      "price": 10500,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "220/100×60 мм",
+        "Полок": "5",
+        "Серия": "MS Pro",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-pro-220-100x60-5.jpg"
+    },
+    {
+      "id": "70",
+      "slug": "stellazh-ms-185kd-70x30-4-black",
+      "name": "Стеллаж MS Standart 185KD/70x30/4",
+      "categorySlug": "stellazhi",
+      "price": 3850,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "185KD/70×30 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-185kd-70x30-4-black.jpg"
+    },
+    {
+      "id": "71",
+      "slug": "stellazh-ms-200-100x40-5-black",
+      "name": "Стеллаж MS Standart 200/100x40/5",
+      "categorySlug": "stellazhi",
+      "price": 4780,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×40 мм",
+        "Полок": "5",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false,
+      "image": "/images/products/stellazh-ms-200-100x40-5-black.jpg"
+    }
+  ]
+}

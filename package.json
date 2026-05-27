@@ -1,0 +1,44 @@
+{
+  "name": "stellazh-komplekt",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "postinstall": "prisma generate",
+    "db:migrate": "prisma migrate deploy",
+    "db:setup": "node scripts/setup-db.mjs",
+    "db:import-orders": "node scripts/import-orders-json.mjs",
+    "db:seed-content": "npx tsx scripts/seed-content.ts",
+    "lint": "eslint",
+    "catalog:images": "node scripts/import-images.mjs && node scripts/fill-missing-images.mjs && node scripts/merge-catalog.mjs",
+    "catalog:expand": "node scripts/generate-ms-catalog.mjs && node scripts/merge-all-catalog.mjs && npm run catalog:images",
+    "telegram:chat-id": "node scripts/telegram-get-chat-id.mjs",
+    "telegram:webhook": "node scripts/telegram-set-webhook.mjs",
+    "telegram:webhook:off": "node scripts/telegram-delete-webhook.mjs",
+    "catalog:merge": "node scripts/merge-catalog.mjs"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.3",
+    "lucide-react": "^1.16.0",
+    "next": "16.2.6",
+    "nodemailer": "^8.0.9",
+    "prisma": "^6.19.3",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "zustand": "^5.0.13"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/nodemailer": "^8.0.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.6",
+    "tailwindcss": "^4",
+    "tsx": "^4.22.3",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,190 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --color-primary: #1a4d8c;
+  --color-primary-dark: #153d6f;
+  --color-accent: #e85d04;
+  --page-transition-out: 220ms;
+  --page-transition-in: 380ms;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@keyframes page-fade-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes page-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+::view-transition-old(.page-fade) {
+  animation: var(--page-transition-out) ease-out both page-fade-out;
+}
+
+::view-transition-new(.page-fade) {
+  animation: var(--page-transition-in) ease-out var(--page-transition-out) both page-fade-in;
+}
+
+::view-transition-group(site-header),
+::view-transition-group(site-mobile-nav) {
+  animation: none;
+  z-index: 100;
+}
+
+::view-transition-old(site-header),
+::view-transition-old(site-mobile-nav) {
+  display: none;
+}
+
+::view-transition-new(site-header),
+::view-transition-new(site-mobile-nav) {
+  animation: none;
+}
+
+/* Короткие плавные анимации (~200–400 ms) */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity 0.45s ease-out,
+    transform 0.45s ease-out;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-hero-in {
+  animation: hero-fade-in 0.35s ease-out both;
+}
+
+.card-hover {
+  transition:
+    box-shadow 0.2s ease-out,
+    border-color 0.2s ease-out,
+    transform 0.2s ease-out;
+}
+
+.card-hover:hover {
+  transform: translateY(-1px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .animate-hero-in {
+    animation: none;
+  }
+
+  .card-hover:hover {
+    transform: none;
+  }
+
+  .hero-slide-transition {
+    transition: none !important;
+  }
+
+  ::view-transition-old(*),
+  ::view-transition-new(*),
+  ::view-transition-group(*) {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Минимальная зона нажатия для мобильных */
+@media (max-width: 1023px) {
+  button:not(.touch-auto),
+  .touch-target {
+    min-height: 44px;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="search"],
+  select,
+  textarea {
+    font-size: 16px; /* без зума на iOS */
+    transition: border-color 0.2s ease-out, box-shadow 0.2s ease-out;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+.product-grid-item {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 320px;
+}

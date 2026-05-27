@@ -1,0 +1,1410 @@
+{
+  "products": [
+    {
+      "id": "gen-1",
+      "slug": "stellazh-ms-185kd-70x30-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-185kd-70x30-4",
+        "stellazh-ms-standart-185kd-70x30-4",
+        "stellazh-ms-185kd-70x30-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-185kd-70x30-4",
+      "name": "Стеллаж MS Standart 185KD/70x30/4",
+      "categorySlug": "stellazhi",
+      "price": 3650,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "185KD/70×30 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": true
+    },
+    {
+      "id": "gen-2",
+      "slug": "stellazh-ms-185-100x30-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-185-100x30-4",
+        "stellazh-ms-standart-185-100x30-4",
+        "stellazh-ms-185-100x30-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-185-100x30-4",
+      "name": "Стеллаж MS Standart 185/100x30/4",
+      "categorySlug": "stellazhi",
+      "price": 3895,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "185/100×30 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": true
+    },
+    {
+      "id": "gen-3",
+      "slug": "stellazh-ms-150kd-75x40-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-150kd-75x40-4",
+        "stellazh-ms-standart-150kd-75x40-4",
+        "stellazh-ms-150kd-75x40-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-150kd-75x40-4",
+      "name": "Стеллаж MS Standart 150KD/75x40/4",
+      "categorySlug": "stellazhi",
+      "price": 3960,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "150KD/75×40 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": true
+    },
+    {
+      "id": "gen-4",
+      "slug": "stellazh-ms-200-100x30-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200-100x30-4",
+        "stellazh-ms-standart-200-100x30-4",
+        "stellazh-ms-200-100x30-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200-100x30-4",
+      "name": "Стеллаж MS Standart 200/100x30/4",
+      "categorySlug": "stellazhi",
+      "price": 4235,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×30 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": true
+    },
+    {
+      "id": "gen-5",
+      "slug": "stellazh-ms-185-100x40-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-185-100x40-4",
+        "stellazh-ms-standart-185-100x40-4",
+        "stellazh-ms-185-100x40-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-185-100x40-4",
+      "name": "Стеллаж MS Standart 185/100x40/4",
+      "categorySlug": "stellazhi",
+      "price": 4480,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "185/100×40 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": true
+    },
+    {
+      "id": "gen-6",
+      "slug": "stellazh-ms-200kd-100x50-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200kd-100x50-4",
+        "stellazh-ms-standart-200kd-100x50-4",
+        "stellazh-ms-200kd-100x50-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200kd-100x50-4",
+      "name": "Стеллаж MS Standart 200KD/100x50/4",
+      "categorySlug": "stellazhi",
+      "price": 5380,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200KD/100×50 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": true
+    },
+    {
+      "id": "gen-7",
+      "slug": "stellazh-ms-200-100x30-6",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200-100x30-6",
+        "stellazh-ms-standart-200-100x30-6",
+        "stellazh-ms-200-100x30-6"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200-100x30-6",
+      "name": "Стеллаж MS Standart 200/100x30/6",
+      "categorySlug": "stellazhi",
+      "price": 5280,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×30 мм",
+        "Полок": "6",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-8",
+      "slug": "stellazh-ms-220-100x30-6",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-220-100x30-6",
+        "stellazh-ms-standart-220-100x30-6",
+        "stellazh-ms-220-100x30-6"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-220-100x30-6",
+      "name": "Стеллаж MS Standart 220/100x30/6",
+      "categorySlug": "stellazhi",
+      "price": 5585,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "220/100×30 мм",
+        "Полок": "6",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-9",
+      "slug": "stellazh-ms-185-100x60-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-185-100x60-4",
+        "stellazh-ms-standart-185-100x60-4",
+        "stellazh-ms-185-100x60-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-185-100x60-4",
+      "name": "Стеллаж MS Standart 185/100x60/4",
+      "categorySlug": "stellazhi",
+      "price": 5715,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "185/100×60 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-10",
+      "slug": "stellazh-ms-200-100x40-6",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200-100x40-6",
+        "stellazh-ms-standart-200-100x40-6",
+        "stellazh-ms-200-100x40-6"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200-100x40-6",
+      "name": "Стеллаж MS Standart 200/100x40/6",
+      "categorySlug": "stellazhi",
+      "price": 6160,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×40 мм",
+        "Полок": "6",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-11",
+      "slug": "stellazh-ms-200kd-100x60-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200kd-100x60-4",
+        "stellazh-ms-standart-200kd-100x60-4",
+        "stellazh-ms-200kd-100x60-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200kd-100x60-4",
+      "name": "Стеллаж MS Standart 200KD/100x60/4",
+      "categorySlug": "stellazhi",
+      "price": 6320,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200KD/100×60 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-12",
+      "slug": "stellazh-ms-220-100x40-6",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-220-100x40-6",
+        "stellazh-ms-standart-220-100x40-6",
+        "stellazh-ms-220-100x40-6"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-220-100x40-6",
+      "name": "Стеллаж MS Standart 220/100x40/6",
+      "categorySlug": "stellazhi",
+      "price": 6470,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "220/100×40 мм",
+        "Полок": "6",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-13",
+      "slug": "stellazh-ms-200-100x60-6",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200-100x60-6",
+        "stellazh-ms-standart-200-100x60-6",
+        "stellazh-ms-200-100x60-6"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200-100x60-6",
+      "name": "Стеллаж MS Standart 200/100x60/6",
+      "categorySlug": "stellazhi",
+      "price": 8010,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×60 мм",
+        "Полок": "6",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-14",
+      "slug": "stellazh-ms-220-100x60-6",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-220-100x60-6",
+        "stellazh-ms-standart-220-100x60-6",
+        "stellazh-ms-220-100x60-6"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-220-100x60-6",
+      "name": "Стеллаж MS Standart 220/100x60/6",
+      "categorySlug": "stellazhi",
+      "price": 8315,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "220/100×60 мм",
+        "Полок": "6",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-15",
+      "slug": "stellazh-ms-185kd-75x35-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-185kd-75x35-4",
+        "stellazh-ms-standart-185kd-75x35-4",
+        "stellazh-ms-185kd-75x35-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-185kd-75x35-4",
+      "name": "Стеллаж MS Standart 185KD/75x35/4",
+      "categorySlug": "stellazhi",
+      "price": 3780,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "185KD/75×35 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-16",
+      "slug": "stellazh-ms-185kd-70x40-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-185kd-70x40-4",
+        "stellazh-ms-standart-185kd-70x40-4",
+        "stellazh-ms-185kd-70x40-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-185kd-70x40-4",
+      "name": "Стеллаж MS Standart 185KD/70x40/4",
+      "categorySlug": "stellazhi",
+      "price": 3920,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "185KD/70×40 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-17",
+      "slug": "stellazh-ms-185kd-100x30-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-185kd-100x30-4",
+        "stellazh-ms-standart-185kd-100x30-4",
+        "stellazh-ms-185kd-100x30-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-185kd-100x30-4",
+      "name": "Стеллаж MS Standart 185KD/100x30/4",
+      "categorySlug": "stellazhi",
+      "price": 4100,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "185KD/100×30 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-18",
+      "slug": "stellazh-ms-185kd-100x40-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-185kd-100x40-4",
+        "stellazh-ms-standart-185kd-100x40-4",
+        "stellazh-ms-185kd-100x40-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-185kd-100x40-4",
+      "name": "Стеллаж MS Standart 185KD/100x40/4",
+      "categorySlug": "stellazhi",
+      "price": 4650,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "185KD/100×40 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-19",
+      "slug": "stellazh-ms-200kd-70x30-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200kd-70x30-4",
+        "stellazh-ms-standart-200kd-70x30-4",
+        "stellazh-ms-200kd-70x30-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200kd-70x30-4",
+      "name": "Стеллаж MS Standart 200KD/70x30/4",
+      "categorySlug": "stellazhi",
+      "price": 3990,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200KD/70×30 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-20",
+      "slug": "stellazh-ms-200kd-75x40-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200kd-75x40-4",
+        "stellazh-ms-standart-200kd-75x40-4",
+        "stellazh-ms-200kd-75x40-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200kd-75x40-4",
+      "name": "Стеллаж MS Standart 200KD/75x40/4",
+      "categorySlug": "stellazhi",
+      "price": 4520,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200KD/75×40 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-21",
+      "slug": "stellazh-ms-200kd-100x30-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200kd-100x30-4",
+        "stellazh-ms-standart-200kd-100x30-4",
+        "stellazh-ms-200kd-100x30-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200kd-100x30-4",
+      "name": "Стеллаж MS Standart 200KD/100x30/4",
+      "categorySlug": "stellazhi",
+      "price": 4890,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200KD/100×30 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-22",
+      "slug": "stellazh-ms-200kd-100x40-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200kd-100x40-4",
+        "stellazh-ms-standart-200kd-100x40-4",
+        "stellazh-ms-200kd-100x40-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200kd-100x40-4",
+      "name": "Стеллаж MS Standart 200KD/100x40/4",
+      "categorySlug": "stellazhi",
+      "price": 5120,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200KD/100×40 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-23",
+      "slug": "stellazh-ms-200-70x30-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200-70x30-4",
+        "stellazh-ms-standart-200-70x30-4",
+        "stellazh-ms-200-70x30-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200-70x30-4",
+      "name": "Стеллаж MS Standart 200/70x30/4",
+      "categorySlug": "stellazhi",
+      "price": 3750,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/70×30 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-24",
+      "slug": "stellazh-ms-200-75x40-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200-75x40-4",
+        "stellazh-ms-standart-200-75x40-4",
+        "stellazh-ms-200-75x40-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200-75x40-4",
+      "name": "Стеллаж MS Standart 200/75x40/4",
+      "categorySlug": "stellazhi",
+      "price": 4180,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/75×40 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-25",
+      "slug": "stellazh-ms-200-100x40-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200-100x40-4",
+        "stellazh-ms-standart-200-100x40-4",
+        "stellazh-ms-200-100x40-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200-100x40-4",
+      "name": "Стеллаж MS Standart 200/100x40/4",
+      "categorySlug": "stellazhi",
+      "price": 4680,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×40 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-26",
+      "slug": "stellazh-ms-200-100x50-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200-100x50-4",
+        "stellazh-ms-standart-200-100x50-4",
+        "stellazh-ms-200-100x50-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200-100x50-4",
+      "name": "Стеллаж MS Standart 200/100x50/4",
+      "categorySlug": "stellazhi",
+      "price": 5520,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×50 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-27",
+      "slug": "stellazh-ms-200-100x50-6",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200-100x50-6",
+        "stellazh-ms-standart-200-100x50-6",
+        "stellazh-ms-200-100x50-6"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200-100x50-6",
+      "name": "Стеллаж MS Standart 200/100x50/6",
+      "categorySlug": "stellazhi",
+      "price": 6890,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×50 мм",
+        "Полок": "6",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-28",
+      "slug": "stellazh-ms-220-100x30-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-220-100x30-4",
+        "stellazh-ms-standart-220-100x30-4",
+        "stellazh-ms-220-100x30-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-220-100x30-4",
+      "name": "Стеллаж MS Standart 220/100x30/4",
+      "categorySlug": "stellazhi",
+      "price": 4980,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "220/100×30 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-29",
+      "slug": "stellazh-ms-220-100x40-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-220-100x40-4",
+        "stellazh-ms-standart-220-100x40-4",
+        "stellazh-ms-220-100x40-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-220-100x40-4",
+      "name": "Стеллаж MS Standart 220/100x40/4",
+      "categorySlug": "stellazhi",
+      "price": 5420,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "220/100×40 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-30",
+      "slug": "stellazh-ms-220-100x50-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-220-100x50-4",
+        "stellazh-ms-standart-220-100x50-4",
+        "stellazh-ms-220-100x50-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-220-100x50-4",
+      "name": "Стеллаж MS Standart 220/100x50/4",
+      "categorySlug": "stellazhi",
+      "price": 5980,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "220/100×50 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-31",
+      "slug": "stellazh-ms-220-100x50-6",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-220-100x50-6",
+        "stellazh-ms-standart-220-100x50-6",
+        "stellazh-ms-220-100x50-6"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-220-100x50-6",
+      "name": "Стеллаж MS Standart 220/100x50/6",
+      "categorySlug": "stellazhi",
+      "price": 7450,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "220/100×50 мм",
+        "Полок": "6",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-32",
+      "slug": "stellazh-ms-255-100x40-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-255-100x40-4",
+        "stellazh-ms-standart-255-100x40-4",
+        "stellazh-ms-255-100x40-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-255-100x40-4",
+      "name": "Стеллаж MS Standart 255/100x40/4",
+      "categorySlug": "stellazhi",
+      "price": 5890,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "255/100×40 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-33",
+      "slug": "stellazh-ms-255-100x60-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-255-100x60-4",
+        "stellazh-ms-standart-255-100x60-4",
+        "stellazh-ms-255-100x60-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-255-100x60-4",
+      "name": "Стеллаж MS Standart 255/100x60/4",
+      "categorySlug": "stellazhi",
+      "price": 7120,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "255/100×60 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-34",
+      "slug": "stellazh-ms-150kd-70x30-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-150kd-70x30-4",
+        "stellazh-ms-standart-150kd-70x30-4",
+        "stellazh-ms-150kd-70x30-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-150kd-70x30-4",
+      "name": "Стеллаж MS Standart 150KD/70x30/4",
+      "categorySlug": "stellazhi",
+      "price": 3290,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "150KD/70×30 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-35",
+      "slug": "stellazh-ms-150kd-100x30-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-150kd-100x30-4",
+        "stellazh-ms-standart-150kd-100x30-4",
+        "stellazh-ms-150kd-100x30-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-150kd-100x30-4",
+      "name": "Стеллаж MS Standart 150KD/100x30/4",
+      "categorySlug": "stellazhi",
+      "price": 3650,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "150KD/100×30 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-36",
+      "slug": "stellazh-ms-185-70x30-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-185-70x30-4",
+        "stellazh-ms-standart-185-70x30-4",
+        "stellazh-ms-185-70x30-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-185-70x30-4",
+      "name": "Стеллаж MS Standart 185/70x30/4",
+      "categorySlug": "stellazhi",
+      "price": 3520,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "185/70×30 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-37",
+      "slug": "stellazh-ms-185-75x40-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-185-75x40-4",
+        "stellazh-ms-standart-185-75x40-4",
+        "stellazh-ms-185-75x40-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-185-75x40-4",
+      "name": "Стеллаж MS Standart 185/75x40/4",
+      "categorySlug": "stellazhi",
+      "price": 4050,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "185/75×40 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-38",
+      "slug": "stellazh-ms-185-100x50-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-185-100x50-4",
+        "stellazh-ms-standart-185-100x50-4",
+        "stellazh-ms-185-100x50-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-185-100x50-4",
+      "name": "Стеллаж MS Standart 185/100x50/4",
+      "categorySlug": "stellazhi",
+      "price": 5120,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "185/100×50 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-39",
+      "slug": "stellazh-ms-185-100x30-6",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-185-100x30-6",
+        "stellazh-ms-standart-185-100x30-6",
+        "stellazh-ms-185-100x30-6"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-185-100x30-6",
+      "name": "Стеллаж MS Standart 185/100x30/6",
+      "categorySlug": "stellazhi",
+      "price": 4850,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "185/100×30 мм",
+        "Полок": "6",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-40",
+      "slug": "stellazh-ms-200kd-100x30-6",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200kd-100x30-6",
+        "stellazh-ms-standart-200kd-100x30-6",
+        "stellazh-ms-200kd-100x30-6"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200kd-100x30-6",
+      "name": "Стеллаж MS Standart 200KD/100x30/6",
+      "categorySlug": "stellazhi",
+      "price": 5450,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200KD/100×30 мм",
+        "Полок": "6",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-41",
+      "slug": "stellazh-ms-200kd-100x40-6",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200kd-100x40-6",
+        "stellazh-ms-standart-200kd-100x40-6",
+        "stellazh-ms-200kd-100x40-6"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200kd-100x40-6",
+      "name": "Стеллаж MS Standart 200KD/100x40/6",
+      "categorySlug": "stellazhi",
+      "price": 5980,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200KD/100×40 мм",
+        "Полок": "6",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-42",
+      "slug": "stellazh-ms-200kd-100x50-6",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200kd-100x50-6",
+        "stellazh-ms-standart-200kd-100x50-6",
+        "stellazh-ms-200kd-100x50-6"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200kd-100x50-6",
+      "name": "Стеллаж MS Standart 200KD/100x50/6",
+      "categorySlug": "stellazhi",
+      "price": 6520,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200KD/100×50 мм",
+        "Полок": "6",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-43",
+      "slug": "stellazh-ms-200kd-100x60-6",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200kd-100x60-6",
+        "stellazh-ms-standart-200kd-100x60-6",
+        "stellazh-ms-200kd-100x60-6"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200kd-100x60-6",
+      "name": "Стеллаж MS Standart 200KD/100x60/6",
+      "categorySlug": "stellazhi",
+      "price": 7890,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200KD/100×60 мм",
+        "Полок": "6",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-44",
+      "slug": "stellazh-ms-strong-200-100x50-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200-100x50-4",
+        "stellazh-ms-standart-200-100x50-4",
+        "stellazh-ms-200-100x50-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200-100x50-4",
+      "name": "Стеллаж MS Strong 200/100x50/4",
+      "categorySlug": "stellazhi",
+      "price": 6890,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×50 мм",
+        "Полок": "4",
+        "Серия": "MS Strong",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-45",
+      "slug": "stellazh-ms-strong-200-100x60-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200-100x60-4",
+        "stellazh-ms-standart-200-100x60-4",
+        "stellazh-ms-200-100x60-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200-100x60-4",
+      "name": "Стеллаж MS Strong 200/100x60/4",
+      "categorySlug": "stellazhi",
+      "price": 7450,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×60 мм",
+        "Полок": "4",
+        "Серия": "MS Strong",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-46",
+      "slug": "stellazh-ms-strong-220-100x60-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-220-100x60-4",
+        "stellazh-ms-standart-220-100x60-4",
+        "stellazh-ms-220-100x60-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-220-100x60-4",
+      "name": "Стеллаж MS Strong 220/100x60/4",
+      "categorySlug": "stellazhi",
+      "price": 8120,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "220/100×60 мм",
+        "Полок": "4",
+        "Серия": "MS Strong",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-47",
+      "slug": "stellazh-ms-strong-220-100x60-6",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-220-100x60-6",
+        "stellazh-ms-standart-220-100x60-6",
+        "stellazh-ms-220-100x60-6"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-220-100x60-6",
+      "name": "Стеллаж MS Strong 220/100x60/6",
+      "categorySlug": "stellazhi",
+      "price": 9450,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "220/100×60 мм",
+        "Полок": "6",
+        "Серия": "MS Strong",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-48",
+      "slug": "stellazh-ms-strong-200-100x50-6",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200-100x50-6",
+        "stellazh-ms-standart-200-100x50-6",
+        "stellazh-ms-200-100x50-6"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200-100x50-6",
+      "name": "Стеллаж MS Strong 200/100x50/6",
+      "categorySlug": "stellazhi",
+      "price": 8200,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×50 мм",
+        "Полок": "6",
+        "Серия": "MS Strong",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-49",
+      "slug": "stellazh-ms-strong-255-100x60-6",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-255-100x60-6",
+        "stellazh-ms-standart-255-100x60-6",
+        "stellazh-ms-255-100x60-6"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-255-100x60-6",
+      "name": "Стеллаж MS Strong 255/100x60/6",
+      "categorySlug": "stellazhi",
+      "price": 10200,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "255/100×60 мм",
+        "Полок": "6",
+        "Серия": "MS Strong",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-50",
+      "slug": "stellazh-ms-hard-200-100x60-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200-100x60-4",
+        "stellazh-ms-standart-200-100x60-4",
+        "stellazh-ms-200-100x60-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200-100x60-4",
+      "name": "Стеллаж MS Hard 200/100x60/4",
+      "categorySlug": "stellazhi",
+      "price": 8950,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×60 мм",
+        "Полок": "4",
+        "Серия": "MS Hard",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-51",
+      "slug": "stellazh-ms-hard-220-100x60-4",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-220-100x60-4",
+        "stellazh-ms-standart-220-100x60-4",
+        "stellazh-ms-220-100x60-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-220-100x60-4",
+      "name": "Стеллаж MS Hard 220/100x60/4",
+      "categorySlug": "stellazhi",
+      "price": 9580,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "220/100×60 мм",
+        "Полок": "4",
+        "Серия": "MS Hard",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-52",
+      "slug": "stellazh-ms-hard-200-100x60-6",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200-100x60-6",
+        "stellazh-ms-standart-200-100x60-6",
+        "stellazh-ms-200-100x60-6"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200-100x60-6",
+      "name": "Стеллаж MS Hard 200/100x60/6",
+      "categorySlug": "stellazhi",
+      "price": 10850,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×60 мм",
+        "Полок": "6",
+        "Серия": "MS Hard",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-53",
+      "slug": "stellazh-es-150kd-75x30-3",
+      "safeRuCandidates": [
+        "stellazh-es-150kd-75x30-3",
+        "stellazh-metallicheskiy-es-150kd-75x30-3",
+        "stellazh-metallicheskiy-ms-standart-150kd-75x30-3",
+        "stellazh-ms-standart-150kd-75x30-3",
+        "stellazh-ms-150kd-75x30-3"
+      ],
+      "safeRuSlug": "stellazh-es-150kd-75x30-3",
+      "name": "Стеллаж ES 150KD/75x30/3",
+      "categorySlug": "stellazhi",
+      "price": 2890,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "150KD/75×30 мм",
+        "Полок": "3",
+        "Серия": "ES",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-54",
+      "slug": "stellazh-es-150kd-75x30-4",
+      "safeRuCandidates": [
+        "stellazh-es-150kd-75x30-4",
+        "stellazh-metallicheskiy-es-150kd-75x30-4",
+        "stellazh-metallicheskiy-ms-standart-150kd-75x30-4",
+        "stellazh-ms-standart-150kd-75x30-4",
+        "stellazh-ms-150kd-75x30-4"
+      ],
+      "safeRuSlug": "stellazh-es-150kd-75x30-4",
+      "name": "Стеллаж ES 150KD/75x30/4",
+      "categorySlug": "stellazhi",
+      "price": 3190,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "150KD/75×30 мм",
+        "Полок": "4",
+        "Серия": "ES",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-55",
+      "slug": "stellazh-es-185kd-75x30-4",
+      "safeRuCandidates": [
+        "stellazh-es-185kd-75x30-4",
+        "stellazh-metallicheskiy-es-185kd-75x30-4",
+        "stellazh-metallicheskiy-ms-standart-185kd-75x30-4",
+        "stellazh-ms-standart-185kd-75x30-4",
+        "stellazh-ms-185kd-75x30-4"
+      ],
+      "safeRuSlug": "stellazh-es-185kd-75x30-4",
+      "name": "Стеллаж ES 185KD/75x30/4",
+      "categorySlug": "stellazhi",
+      "price": 3450,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "185KD/75×30 мм",
+        "Полок": "4",
+        "Серия": "ES",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-56",
+      "slug": "stellazh-es-75kd-75x30-3",
+      "safeRuCandidates": [
+        "stellazh-es-75kd-75x30-3",
+        "stellazh-metallicheskiy-es-75kd-75x30-3",
+        "stellazh-metallicheskiy-ms-standart-75kd-75x30-3",
+        "stellazh-ms-standart-75kd-75x30-3",
+        "stellazh-ms-75kd-75x30-3"
+      ],
+      "safeRuSlug": "stellazh-es-75kd-75x30-3",
+      "name": "Стеллаж ES 75KD/75x30/3",
+      "categorySlug": "stellazhi",
+      "price": 2490,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "75KD/75×30 мм",
+        "Полок": "3",
+        "Серия": "ES",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-57",
+      "slug": "stellazh-es-200-100x30-4",
+      "safeRuCandidates": [
+        "stellazh-es-200-100x30-4",
+        "stellazh-metallicheskiy-es-200-100x30-4",
+        "stellazh-metallicheskiy-ms-standart-200-100x30-4",
+        "stellazh-ms-standart-200-100x30-4",
+        "stellazh-ms-200-100x30-4"
+      ],
+      "safeRuSlug": "stellazh-es-200-100x30-4",
+      "name": "Стеллаж ES 200/100x30/4",
+      "categorySlug": "stellazhi",
+      "price": 3890,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×30 мм",
+        "Полок": "4",
+        "Серия": "ES",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-58",
+      "slug": "stellazh-sbe-180kd-75x35-5",
+      "safeRuCandidates": [
+        "stellazh-sbe-180kd-75x35-5-otsink",
+        "stellazh-sbe-180kdkd-75kh35-5",
+        "stellazh-metallicheskiy-ms-standart-180kd-75x35-5",
+        "stellazh-ms-standart-180kd-75x35-5",
+        "stellazh-ms-180kd-75x35-5"
+      ],
+      "safeRuSlug": "stellazh-sbe-180kd-75x35-5-otsink",
+      "name": "Стеллаж SBE 180KD/75x35/5",
+      "categorySlug": "stellazhi",
+      "price": 2800,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "180KD/75×35 мм",
+        "Полок": "5",
+        "Серия": "SBE",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-59",
+      "slug": "stellazh-sbe-180kd-90x40-5",
+      "safeRuCandidates": [
+        "stellazh-sbe-180kd-90x40-5-otsink",
+        "stellazh-sbe-180kdkd-90kh40-5",
+        "stellazh-metallicheskiy-ms-standart-180kd-90x40-5",
+        "stellazh-ms-standart-180kd-90x40-5",
+        "stellazh-ms-180kd-90x40-5"
+      ],
+      "safeRuSlug": "stellazh-sbe-180kd-90x40-5-otsink",
+      "name": "Стеллаж SBE 180KD/90x40/5",
+      "categorySlug": "stellazhi",
+      "price": 3200,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "180KD/90×40 мм",
+        "Полок": "5",
+        "Серия": "SBE",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-60",
+      "slug": "stellazh-sbe-180kd-90x45-5",
+      "safeRuCandidates": [
+        "stellazh-sbe-180kd-90x45-5-otsink",
+        "stellazh-sbe-180kdkd-90kh45-5",
+        "stellazh-metallicheskiy-ms-standart-180kd-90x45-5",
+        "stellazh-ms-standart-180kd-90x45-5",
+        "stellazh-ms-180kd-90x45-5"
+      ],
+      "safeRuSlug": "stellazh-sbe-180kd-90x45-5-otsink",
+      "name": "Стеллаж SBE 180KD/90x45/5",
+      "categorySlug": "stellazhi",
+      "price": 3450,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "180KD/90×45 мм",
+        "Полок": "5",
+        "Серия": "SBE",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-61",
+      "slug": "stellazh-sbe-180kd-120x40-5",
+      "safeRuCandidates": [
+        "stellazh-sbe-180kd-120x40-5-otsink",
+        "stellazh-sbe-180kdkd-120kh40-5",
+        "stellazh-metallicheskiy-ms-standart-180kd-120x40-5",
+        "stellazh-ms-standart-180kd-120x40-5",
+        "stellazh-ms-180kd-120x40-5"
+      ],
+      "safeRuSlug": "stellazh-sbe-180kd-120x40-5-otsink",
+      "name": "Стеллаж SBE 180KD/120x40/5",
+      "categorySlug": "stellazhi",
+      "price": 3600,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "180KD/120×40 мм",
+        "Полок": "5",
+        "Серия": "SBE",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-62",
+      "slug": "stellazh-sbe-180kd-120x45-5",
+      "safeRuCandidates": [
+        "stellazh-sbe-180kd-120x45-5-otsink",
+        "stellazh-sbe-180kdkd-120kh45-5",
+        "stellazh-metallicheskiy-ms-standart-180kd-120x45-5",
+        "stellazh-ms-standart-180kd-120x45-5",
+        "stellazh-ms-180kd-120x45-5"
+      ],
+      "safeRuSlug": "stellazh-sbe-180kd-120x45-5-otsink",
+      "name": "Стеллаж SBE 180KD/120x45/5",
+      "categorySlug": "stellazhi",
+      "price": 3900,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "180KD/120×45 мм",
+        "Полок": "5",
+        "Серия": "SBE",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-63",
+      "slug": "stellazh-ms-pro-200-100x60-5",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200-100x60-5",
+        "stellazh-ms-standart-200-100x60-5",
+        "stellazh-ms-200-100x60-5"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200-100x60-5",
+      "name": "Стеллаж MS Pro 200/100x60/5",
+      "categorySlug": "stellazhi",
+      "price": 9850,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×60 мм",
+        "Полок": "5",
+        "Серия": "MS Pro",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-64",
+      "slug": "stellazh-ms-pro-220-100x60-5",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-220-100x60-5",
+        "stellazh-ms-standart-220-100x60-5",
+        "stellazh-ms-220-100x60-5"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-220-100x60-5",
+      "name": "Стеллаж MS Pro 220/100x60/5",
+      "categorySlug": "stellazhi",
+      "price": 10500,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "220/100×60 мм",
+        "Полок": "5",
+        "Серия": "MS Pro",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-65",
+      "slug": "stellazh-ms-185kd-70x30-4-black",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-185kd-70x30-4",
+        "stellazh-ms-standart-185kd-70x30-4",
+        "stellazh-ms-185kd-70x30-4"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-185kd-70x30-4",
+      "name": "Стеллаж MS Standart 185KD/70x30/4",
+      "categorySlug": "stellazhi",
+      "price": 3850,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "185KD/70×30 мм",
+        "Полок": "4",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    },
+    {
+      "id": "gen-66",
+      "slug": "stellazh-ms-200-100x40-5-black",
+      "safeRuCandidates": [
+        "stellazh-metallicheskiy-ms-standart-200-100x40-5",
+        "stellazh-ms-standart-200-100x40-5",
+        "stellazh-ms-200-100x40-5"
+      ],
+      "safeRuSlug": "stellazh-metallicheskiy-ms-standart-200-100x40-5",
+      "name": "Стеллаж MS Standart 200/100x40/5",
+      "categorySlug": "stellazhi",
+      "price": 4780,
+      "inStock": 50,
+      "specs": {
+        "Размеры": "200/100×40 мм",
+        "Полок": "5",
+        "Серия": "MS Standart",
+        "Гарантия": "2 года"
+      },
+      "isFeatured": false
+    }
+  ]
+}

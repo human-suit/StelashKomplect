@@ -1,0 +1,184 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// Счётчик для номеров SK-YYYY-NNNNN
+model OrderSequence {
+  id    String @id @default("default")
+  value Int    @default(0)
+}
+
+model Order {
+  id               String   @id @default(cuid())
+  orderNumber      String   @unique
+  name             String
+  phone            String
+  email            String?
+  cityId           String
+  deliveryType     String
+  pickupLocationId String?
+  address          String?
+  clientType       String
+  companyName      String?
+  comment          String?
+  items            Json
+  calculation      Json
+  assemblyEnabled  Boolean?
+  paymentMethod    String?
+  status           String   @default("new")
+  paymentStatus    String   @default("none")
+  paymentId        String?
+  paidAmountRub    Int?
+  chargeAmountRub  Int?
+  managerNote      String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  @@index([createdAt(sort: Desc)])
+  @@index([status])
+}
+
+model NewsPost {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  title     String
+  date      DateTime
+  excerpt   String
+  content   Json
+  published Boolean  @default(true)
+  sortOrder Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([published, date(sort: Desc)])
+}
+
+model KnowledgeArticle {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  title     String
+  category  String
+  excerpt   String
+  content   Json
+  published Boolean  @default(true)
+  sortOrder Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([published, sortOrder])
+}
+
+model Brand {
+  id        String  @id @default(cuid())
+  name      String  @unique
+  note      String?
+  published Boolean @default(true)
+  sortOrder Int     @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([published, sortOrder])
+}
+
+model HeroSlide {
+  id                String  @id @default(cuid())
+  slideKey          String  @unique
+  title             String
+  subtitle          String
+  badge             String?
+  ctaPrimaryLabel   String
+  ctaPrimaryHref    String
+  ctaSecondaryLabel String?
+  ctaSecondaryHref  String?
+  gradient          String
+  published         Boolean @default(true)
+  sortOrder         Int     @default(0)
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  @@index([published, sortOrder])
+}
+
+model IndustrySolution {
+  id          String  @id @default(cuid())
+  solutionKey String  @unique
+  title       String
+  description String
+  href        String
+  icon        String
+  published   Boolean @default(true)
+  sortOrder   Int     @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([published, sortOrder])
+}
+
+model Project {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  title     String
+  tags      Json
+  excerpt   String
+  bullets   Json
+  published Boolean  @default(true)
+  sortOrder Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([published, sortOrder])
+}
+
+model CmsCity {
+  id        String        @id
+  name      String
+  region    String
+  isDefault Boolean       @default(false)
+  sortOrder Int           @default(0)
+  locations CmsLocation[]
+  createdAt DateTime      @default(now())
+  updatedAt DateTime      @updatedAt
+
+  @@index([sortOrder])
+}
+
+model CmsLocation {
+  id        String   @id
+  cityId    String
+  city      CmsCity  @relation(fields: [cityId], references: [id], onDelete: Cascade)
+  type      String
+  label     String
+  address   String
+  note      String?
+  lat       Float?
+  lon       Float?
+  sortOrder Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([cityId, sortOrder])
+}
+
+model Product {
+  id           String   @id
+  slug         String   @unique
+  name         String
+  categorySlug String
+  price        Int
+  inStock      Int      @default(0)
+  image        String   @default("")
+  specs        Json     @default("{}")
+  isFeatured   Boolean  @default(false)
+  published    Boolean  @default(true)
+  sortOrder    Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([categorySlug, published])
+  @@index([published, isFeatured])
+}
