@@ -3,39 +3,41 @@
 import type { Product } from "@/lib/products";
 import { searchProductsInList } from "@/lib/products";
 import { ProductCard } from "@/components/product/product-card";
-import { Search, X } from "lucide-react";
+import { CatalogSearchField } from "@/components/catalog/catalog-search-field";
+import { ListPagination } from "@/components/ui/list-pagination";
 import { useMemo, useState } from "react";
+
+const ITEMS_PER_PAGE = 10;
 
 export function CatalogSearch({ products }: { products: Product[] }) {
   const [query, setQuery] = useState("");
+  const [page, setPage] = useState(1);
 
   const results = useMemo(
     () => searchProductsInList(products, query),
     [products, query],
   );
 
+  const totalPages = Math.max(1, Math.ceil(results.length / ITEMS_PER_PAGE));
+  const currentPage = Math.min(Math.max(1, page), totalPages);
+
+  const visible = useMemo(() => {
+    const start = (currentPage - 1) * ITEMS_PER_PAGE;
+    return results.slice(start, start + ITEMS_PER_PAGE);
+  }, [results, currentPage]);
+
+  function handleQueryChange(nextQuery: string) {
+    setQuery(nextQuery);
+    setPage(1);
+  }
+
+  function handlePageChange(nextPage: number) {
+    setPage(nextPage);
+  }
+
   return (
     <div className="mb-6">
-      <div className="relative">
-        <Search className="absolute left-3 top-1/2 size-5 -translate-y-1/2 text-slate-400" />
-        <input
-          type="search"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Поиск по каталогу…"
-          className="w-full rounded-xl border border-slate-200 bg-white py-3 pl-10 pr-10 text-base shadow-sm outline-none focus:border-[var(--color-primary)]"
-        />
-        {query && (
-          <button
-            type="button"
-            onClick={() => setQuery("")}
-            className="touch-auto absolute right-2 top-1/2 flex size-10 -translate-y-1/2 items-center justify-center text-slate-400"
-            aria-label="Очистить"
-          >
-            <X className="size-5" />
-          </button>
-        )}
-      </div>
+      <CatalogSearchField value={query} onChange={handleQueryChange} />
 
       {query.length >= 2 && (
         <div className="mt-4">
@@ -45,13 +47,24 @@ export function CatalogSearch({ products }: { products: Product[] }) {
           {results.length === 0 ? (
             <p className="text-sm text-slate-500">Ничего не найдено</p>
           ) : (
-            <ul className="grid gap-4 sm:grid-cols-2">
-              {results.slice(0, 12).map((p) => (
-                <li key={p.id} className="product-grid-item">
-                  <ProductCard product={p} />
-                </li>
-              ))}
-            </ul>
+            <>
+              <ul
+                key={`${query}-${currentPage}`}
+                className="catalog-results-in grid gap-4 sm:grid-cols-2"
+              >
+                {visible.map((p) => (
+                  <li key={p.id} className="product-grid-item">
+                    <ProductCard product={p} />
+                  </li>
+                ))}
+              </ul>
+              <ListPagination
+                page={currentPage}
+                totalPages={totalPages}
+                onPageChange={handlePageChange}
+                className="mt-6"
+              />
+            </>
           )}
         </div>
       )}

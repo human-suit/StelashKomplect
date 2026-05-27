@@ -3,7 +3,8 @@
 import { company } from "@/lib/company";
 import { cn } from "@/lib/cn";
 import { useCartStore } from "@/store/cart-store";
-import { Menu, Phone, ShoppingCart, X } from "lucide-react";
+import { useCompareStore } from "@/store/compare-store";
+import { Menu, Phone, Scale, ShoppingCart, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { CitySelector } from "./city-selector";
@@ -23,6 +24,7 @@ const navLinks = [
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const itemCount = useCartStore((s) => s.itemCount());
+  const compareCount = useCompareStore((s) => s.slugs.length);
 
   return (
     <header
@@ -49,6 +51,20 @@ export function Header() {
           >
             <Phone className="size-5" />
           </a>
+
+          <Link
+            href="/compare"
+            data-compare-target="true"
+            className="relative flex size-10 items-center justify-center rounded-lg text-[var(--color-primary)] transition-colors duration-200 hover:bg-slate-100"
+            aria-label="Сравнение"
+          >
+            <Scale className="size-5" />
+            {compareCount > 0 && (
+              <span className="absolute -right-0.5 -top-0.5 flex size-5 items-center justify-center rounded-full bg-[var(--color-accent)] text-[10px] font-bold text-white">
+                {compareCount > 99 ? "99+" : compareCount}
+              </span>
+            )}
+          </Link>
 
           <Link
             href="/cart"
@@ -86,7 +102,6 @@ export function Header() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                data-compare-target={link.href === "/compare" ? "true" : undefined}
                 onClick={() => setMenuOpen(false)}
                 className="block py-3 text-sm font-medium text-slate-700 transition-colors duration-200 hover:text-[var(--color-primary)] lg:py-3"
               >

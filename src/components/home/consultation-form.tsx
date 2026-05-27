@@ -4,7 +4,7 @@ import { useCityStore } from "@/store/city-store";
 import { useCityById } from "@/context/cities-context";
 import { company } from "@/lib/company";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
 const requestTypes = [
@@ -28,11 +28,6 @@ export function ConsultationForm() {
   const [consent, setConsent] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-
-  // Подстройка: при отсутствии сохранённого города показываем дефолт
-  useEffect(() => {
-    if (!city) return;
-  }, [city]);
 
   function handleRequestTypeChange(value: string) {
     if ((requestTypes as readonly string[]).includes(value)) {
@@ -89,21 +84,22 @@ export function ConsultationForm() {
   }
 
   return (
-    <section id="consultation" className="scroll-mt-20 px-4 py-10">
+    <section id="consultation" className="scroll-mt-20 bg-slate-50 px-4 py-10">
       <div className="mx-auto max-w-7xl">
-        <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
-          <div>
-            <h2 className="text-xl font-bold text-slate-900">Консультация</h2>
-            <p className="mt-1 text-sm text-slate-600">
-              Оставьте заявку — менеджер свяжется с вами по вашему вопросу.
+        <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+          <div className="flex flex-col gap-2 border-b border-slate-100 bg-slate-50/80 px-5 py-5 sm:flex-row sm:items-end sm:justify-between sm:px-6">
+            <div>
+              <h2 className="text-xl font-bold text-slate-900">Консультация</h2>
+              <p className="mt-1 text-sm text-slate-600">
+                Оставьте заявку — менеджер свяжется с вами по вашему вопросу.
+              </p>
+            </div>
+            <p className="text-sm font-medium text-slate-500">
+              {city ? `Город: ${city.name}` : `Город: ${cityId}`}
             </p>
           </div>
-          <p className="text-sm text-slate-500">
-            {city ? `Город: ${city.name}` : `Город: ${cityId}`}
-          </p>
-        </div>
 
-        <form onSubmit={handleSubmit} className="space-y-5 rounded-2xl border border-slate-200 bg-white p-5">
+          <form onSubmit={handleSubmit} className="space-y-5 p-5 sm:p-6">
           <div className="grid gap-4 sm:grid-cols-2">
             <input
               required
@@ -181,7 +177,8 @@ export function ConsultationForm() {
               написать в Telegram
             </a>
           </p>
-        </form>
+          </form>
+        </div>
       </div>
     </section>
   );

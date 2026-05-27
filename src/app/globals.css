@@ -113,6 +113,21 @@ html {
   animation: hero-fade-in 0.35s ease-out both;
 }
 
+@keyframes catalog-results-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.catalog-results-in {
+  animation: catalog-results-in 0.28s ease-out both;
+}
+
 .card-hover {
   transition:
     box-shadow 0.2s ease-out,
@@ -132,6 +147,10 @@ html {
   }
 
   .animate-hero-in {
+    animation: none;
+  }
+
+  .catalog-results-in {
     animation: none;
   }
 
