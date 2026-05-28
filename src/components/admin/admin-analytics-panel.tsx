@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Button, ButtonLink } from "@/components/ui/button";
 
 interface Snapshot {
@@ -22,8 +22,44 @@ interface Snapshot {
   topUtmCampaigns?: { value: string; count: number }[];
 }
 
+const PAGE_LABELS: Record<string, string> = {
+  "/": "Главная",
+  "/catalog": "Каталог",
+  "/cart": "Корзина",
+  "/compare": "Сравнение",
+  "/checkout": "Оформление заявки",
+  "/checkout/payment": "Страница оплаты",
+  "/checkout/success": "Успешная заявка",
+  "/contacts": "Контакты",
+  "/where-to-buy": "Где купить",
+  "/about": "О компании",
+  "/news": "Новости",
+  "/knowledge": "База знаний",
+  "/projects": "Проекты",
+  "/reviews": "Отзывы",
+  "/catalogs": "PDF каталоги",
+  "/privacy": "Политика конфиденциальности",
+  "/admin": "Панель администратора",
+  "/admin/login": "Вход в админку",
+  "/admin/content": "CMS контент",
+  "/admin/analytics": "Аналитика",
+  "/admin/reports": "Отчеты",
+};
+
+function getPageLabel(pathWithQuery: string): string {
+  const cleanPath = pathWithQuery.split("?")[0] || "/";
+  if (PAGE_LABELS[cleanPath]) return PAGE_LABELS[cleanPath];
+  if (cleanPath.startsWith("/product/")) return "Карточка товара";
+  if (cleanPath.startsWith("/catalog/")) return "Категория каталога";
+  if (cleanPath.startsWith("/news/")) return "Новость";
+  if (cleanPath.startsWith("/knowledge/")) return "Статья базы знаний";
+  if (cleanPath.startsWith("/api/")) return "API запрос";
+  return "Страница сайта";
+}
+
 export function AdminAnalyticsPanel() {
   const router = useRouter();
+  const pathname = usePathname();
   const [data, setData] = useState<Snapshot | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -73,16 +109,25 @@ export function AdminAnalyticsPanel() {
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
-          <ButtonLink href="/admin" variant="outline">
+          <ButtonLink href="/admin" variant={pathname === "/admin" ? "primary" : "outline"}>
             Заявки
           </ButtonLink>
-          <ButtonLink href="/admin/reports" variant="outline">
+          <ButtonLink
+            href="/admin/reports"
+            variant={pathname === "/admin/reports" ? "primary" : "outline"}
+          >
             Отчеты
           </ButtonLink>
-          <ButtonLink href="/admin/content" variant="outline">
+          <ButtonLink
+            href="/admin/content"
+            variant={pathname === "/admin/content" ? "primary" : "outline"}
+          >
             Контент
           </ButtonLink>
-          <ButtonLink href="/admin/analytics" variant="outline">
+          <ButtonLink
+            href="/admin/analytics"
+            variant={pathname === "/admin/analytics" ? "primary" : "outline"}
+          >
             Аналитика
           </ButtonLink>
           <Button type="button" variant="outline" onClick={logout}>
@@ -145,7 +190,14 @@ export function AdminAnalyticsPanel() {
           <ul className="mt-3 space-y-2 text-sm">
             {data.topPages.map((p) => (
               <li key={p.path} className="flex items-center justify-between gap-4">
-                <span className="truncate text-slate-700">{p.path}</span>
+                <div className="min-w-0">
+                  <p className="truncate font-medium text-slate-800">
+                    {getPageLabel(p.path)}
+                  </p>
+                  <p className="truncate text-xs text-slate-500">
+                    {p.path.split("?")[0] || "/"} — {getPageLabel(p.path)}
+                  </p>
+                </div>
                 <span className="shrink-0 rounded-full bg-slate-100 px-2 py-0.5 text-xs font-semibold text-slate-700">
                   {p.count}
                 </span>

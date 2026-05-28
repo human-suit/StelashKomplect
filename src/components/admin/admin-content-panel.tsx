@@ -7,7 +7,7 @@ import {
 } from "@/lib/server/cms/resources";
 import { specsToText } from "@/lib/specs";
 import { asStringArray } from "@/lib/server/cms/utils";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Button, ButtonLink } from "@/components/ui/button";
 
@@ -306,6 +306,7 @@ function formToBody(
 
 export function AdminContentPanel() {
   const router = useRouter();
+  const pathname = usePathname();
   const [resource, setResource] = useState<CmsResource>("news");
   const [items, setItems] = useState<CmsItem[]>([]);
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -465,16 +466,25 @@ export function AdminContentPanel() {
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
-          <ButtonLink href="/admin" variant="outline">
+          <ButtonLink href="/admin" variant={pathname === "/admin" ? "primary" : "outline"}>
             Заявки
           </ButtonLink>
-          <ButtonLink href="/admin/reports" variant="outline">
+          <ButtonLink
+            href="/admin/reports"
+            variant={pathname === "/admin/reports" ? "primary" : "outline"}
+          >
             Отчеты
           </ButtonLink>
-          <ButtonLink href="/admin/content" variant="outline">
+          <ButtonLink
+            href="/admin/content"
+            variant={pathname === "/admin/content" ? "primary" : "outline"}
+          >
             CMS
           </ButtonLink>
-          <ButtonLink href="/admin/analytics" variant="outline">
+          <ButtonLink
+            href="/admin/analytics"
+            variant={pathname === "/admin/analytics" ? "primary" : "outline"}
+          >
             Аналитика
           </ButtonLink>
           <Button type="button" variant="outline" onClick={logout}>

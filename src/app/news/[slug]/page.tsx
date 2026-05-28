@@ -16,16 +16,55 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const item = await getNewsBySlug(slug);
   if (!item) return { title: "Новость" };
-  return { title: item.title, description: item.excerpt };
+  return {
+    title: item.title,
+    description: item.excerpt,
+    alternates: {
+      canonical: `/news/${item.slug}`,
+    },
+    openGraph: {
+      title: item.title,
+      description: item.excerpt,
+      type: "article",
+      url: `/news/${item.slug}`,
+      publishedTime: new Date(item.date).toISOString(),
+    },
+    twitter: {
+      card: "summary",
+      title: item.title,
+      description: item.excerpt,
+    },
+  };
 }
 
 export default async function NewsItemPage({ params }: Props) {
   const { slug } = await params;
   const item = await getNewsBySlug(slug);
   if (!item) notFound();
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    headline: item.title,
+    datePublished: new Date(item.date).toISOString(),
+    dateModified: new Date(item.date).toISOString(),
+    description: item.excerpt,
+    mainEntityOfPage: `https://stellazhkomplect.ru/news/${item.slug}`,
+    author: {
+      "@type": "Organization",
+      name: "Стеллаж Комплект",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Стеллаж Комплект",
+    },
+  };
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <p className="text-xs text-slate-500">
         {new Date(item.date).toLocaleDateString("ru-RU")}
       </p>

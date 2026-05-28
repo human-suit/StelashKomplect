@@ -8,9 +8,6 @@ import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 
 const ITEMS_PER_PAGE = 10;
-const FILTERS_KEY = "sk-admin-filters";
-const PRESETS_KEY = "sk-admin-report-presets";
-
 type PanelMode = "orders" | "reports";
 type PaymentFilter = "all" | "online_card" | "cash" | "invoice";
 
@@ -21,12 +18,6 @@ interface ReportFilters {
   dateTo: string;
 }
 
-interface SavedPreset {
-  id: string;
-  name: string;
-  filters: ReportFilters;
-}
-
 const DEFAULT_FILTERS: ReportFilters = {
   status: "all",
   paymentMethod: "all",
@@ -34,51 +25,18 @@ const DEFAULT_FILTERS: ReportFilters = {
   dateTo: "",
 };
 
-function readFiltersFromStorage(): ReportFilters {
-  if (typeof window === "undefined") return DEFAULT_FILTERS;
-  try {
-    const raw = localStorage.getItem(FILTERS_KEY);
-    if (!raw) return DEFAULT_FILTERS;
-    const parsed = JSON.parse(raw) as Partial<ReportFilters>;
-    return { ...DEFAULT_FILTERS, ...parsed };
-  } catch {
-    return DEFAULT_FILTERS;
-  }
-}
-
-function readPresetsFromStorage(): SavedPreset[] {
-  if (typeof window === "undefined") return [];
-  try {
-    const raw = localStorage.getItem(PRESETS_KEY);
-    if (!raw) return [];
-    const parsed = JSON.parse(raw) as SavedPreset[];
-    return Array.isArray(parsed) ? parsed : [];
-  } catch {
-    return [];
-  }
-}
-
-function saveFiltersToStorage(filters: ReportFilters): void {
-  if (typeof window === "undefined") return;
-  localStorage.setItem(FILTERS_KEY, JSON.stringify(filters));
-}
-
-function savePresetsToStorage(presets: SavedPreset[]): void {
-  if (typeof window === "undefined") return;
-  localStorage.setItem(PRESETS_KEY, JSON.stringify(presets));
-}
-
 export function AdminOrdersPanel({ mode = "orders" }: { mode?: PanelMode }) {
   const router = useRouter();
   const [orders, setOrders] = useState<StoredOrder[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-  const [filters, setFilters] = useState<ReportFilters>(readFiltersFromStorage);
+  const [filters, setFilters] = useState<ReportFilters>(DEFAULT_FILTERS);
+  const [pendingFilters, setPendingFilters] = useState<ReportFilters>(DEFAULT_FILTERS);
+  const [search, setSearch] = useState("");
+  const [pendingSearch, setPendingSearch] = useState("");
   const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
   const [saving, setSaving] = useState<string | null>(null);
   const [saveError, setSaveError] = useState<string>("");
-  const [presets, setPresets] = useState<SavedPreset[]>(readPresetsFromStorage);
-  const [presetName, setPresetName] = useState("");
   const [pdfLoading, setPdfLoading] = useState(false);
 
   useEffect(() => {
@@ -111,18 +69,33 @@ export function AdminOrdersPanel({ mode = "orders" }: { mode?: PanelMode }) {
       const toOk =
         !filters.dateTo ||
         created <= new Date(`${filters.dateTo}T23:59:59`).getTime();
+      const text = `${order.orderNumber} ${order.name} ${order.phone} ${order.email ?? ""} ${order.comment ?? ""} ${order.managerNote ?? ""}`.toLowerCase();
+      const searchOk =
+        !search.trim() || text.includes(search.trim().toLowerCase());
 
-      return statusOk && paymentOk && fromOk && toOk;
+      return statusOk && paymentOk && fromOk && toOk && searchOk;
     });
-  }, [orders, filters]);
+  }, [orders, filters, search]);
 
   const visibleOrders = filteredOrders.slice(0, visibleCount);
 
-  function patchFilters(patch: Partial<ReportFilters>) {
-    const next = { ...filters, ...patch };
-    setFilters(next);
+  function patchPendingFilters(patch: Partial<ReportFilters>) {
+    const next = { ...pendingFilters, ...patch };
+    setPendingFilters(next);
+  }
+
+  function applyFilters() {
+    setFilters(pendingFilters);
+    setSearch(pendingSearch);
     setVisibleCount(ITEMS_PER_PAGE);
-    saveFiltersToStorage(next);
+  }
+
+  function resetFilters() {
+    setPendingFilters(DEFAULT_FILTERS);
+    setFilters(DEFAULT_FILTERS);
+    setPendingSearch("");
+    setSearch("");
+    setVisibleCount(ITEMS_PER_PAGE);
   }
 
   async function logout() {
@@ -141,6 +114,13 @@ export function AdminOrdersPanel({ mode = "orders" }: { mode?: PanelMode }) {
     if (s === "processing") return "В работе";
     if (s === "done") return "Завершена";
     return "Отменена";
+  };
+
+  const statusBadgeClass = (s: StoredOrder["status"]) => {
+    if (s === "done") return "bg-green-50 text-green-800";
+    if (s === "cancelled") return "bg-red-50 text-red-800";
+    if (s === "processing") return "bg-amber-50 text-amber-800";
+    return "bg-blue-50 text-blue-800";
   };
 
   const paymentStatusLabel = (s?: StoredOrder["paymentStatus"]) => {
@@ -203,34 +183,6 @@ export function AdminOrdersPanel({ mode = "orders" }: { mode?: PanelMode }) {
     }
   }
 
-  function saveCurrentPreset() {
-    const name = presetName.trim();
-    if (!name) return;
-    const preset: SavedPreset = {
-      id: `${Date.now()}`,
-      name,
-      filters,
-    };
-    const next = [preset, ...presets].slice(0, 20);
-    setPresets(next);
-    setPresetName("");
-    savePresetsToStorage(next);
-  }
-
-  function applyPreset(id: string) {
-    const preset = presets.find((p) => p.id === id);
-    if (!preset) return;
-    setFilters(preset.filters);
-    setVisibleCount(ITEMS_PER_PAGE);
-    saveFiltersToStorage(preset.filters);
-  }
-
-  function deletePreset(id: string) {
-    const next = presets.filter((p) => p.id !== id);
-    setPresets(next);
-    savePresetsToStorage(next);
-  }
-
   async function downloadPdfReport() {
     if (filteredOrders.length === 0) return;
     setPdfLoading(true);
@@ -289,17 +241,20 @@ export function AdminOrdersPanel({ mode = "orders" }: { mode?: PanelMode }) {
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div>
           <h1 className="text-xl font-bold text-slate-900">
-            {mode === "reports" ? "Отчеты и статусы" : "Заявки"}
+            {mode === "reports" ? "Отчеты" : "Заявки"}
           </h1>
           <p className="text-sm text-slate-500">
             Всего: {orders.length} · Показано: {filteredOrders.length}
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
-          <ButtonLink href="/admin" variant="outline">
+          <ButtonLink href="/admin" variant={mode === "orders" ? "primary" : "outline"}>
             Заявки
           </ButtonLink>
-          <ButtonLink href="/admin/reports" variant="outline">
+          <ButtonLink
+            href="/admin/reports"
+            variant={mode === "reports" ? "primary" : "outline"}
+          >
             Отчеты
           </ButtonLink>
           <ButtonLink href="/admin/content" variant="outline">
@@ -314,13 +269,28 @@ export function AdminOrdersPanel({ mode = "orders" }: { mode?: PanelMode }) {
         </div>
       </div>
 
-      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      <form
+        className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5"
+        onSubmit={(e) => {
+          e.preventDefault();
+          applyFilters();
+        }}
+      >
+        <label className="space-y-1 lg:col-span-2">
+          <span className="text-xs text-slate-500">Поиск по заявкам</span>
+          <input
+            className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
+            placeholder="Номер, имя, телефон, комментарий…"
+            value={pendingSearch}
+            onChange={(e) => setPendingSearch(e.target.value)}
+          />
+        </label>
         <label className="space-y-1">
           <span className="text-xs text-slate-500">Фильтр по статусу</span>
           <select
             className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
-            value={filters.status}
-            onChange={(e) => patchFilters({ status: e.target.value })}
+            value={pendingFilters.status}
+            onChange={(e) => patchPendingFilters({ status: e.target.value })}
           >
             <option value="all">Все статусы</option>
             <option value="new">Новая</option>
@@ -334,9 +304,9 @@ export function AdminOrdersPanel({ mode = "orders" }: { mode?: PanelMode }) {
           <span className="text-xs text-slate-500">Фильтр по оплате</span>
           <select
             className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
-            value={filters.paymentMethod}
+            value={pendingFilters.paymentMethod}
             onChange={(e) =>
-              patchFilters({ paymentMethod: e.target.value as PaymentFilter })
+              patchPendingFilters({ paymentMethod: e.target.value as PaymentFilter })
             }
           >
             <option value="all">Все способы</option>
@@ -351,8 +321,8 @@ export function AdminOrdersPanel({ mode = "orders" }: { mode?: PanelMode }) {
           <input
             type="date"
             className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
-            value={filters.dateFrom}
-            onChange={(e) => patchFilters({ dateFrom: e.target.value })}
+            value={pendingFilters.dateFrom}
+            onChange={(e) => patchPendingFilters({ dateFrom: e.target.value })}
           />
         </label>
 
@@ -361,23 +331,16 @@ export function AdminOrdersPanel({ mode = "orders" }: { mode?: PanelMode }) {
           <input
             type="date"
             className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
-            value={filters.dateTo}
-            onChange={(e) => patchFilters({ dateTo: e.target.value })}
+            value={pendingFilters.dateTo}
+            onChange={(e) => patchPendingFilters({ dateTo: e.target.value })}
           />
         </label>
-      </div>
-
-      <div className="rounded-xl border border-slate-200 bg-white p-4">
-        <p className="mb-2 text-sm font-semibold text-slate-900">Сохраненные фильтры</p>
-        <div className="flex flex-wrap items-center gap-2">
-          <input
-            value={presetName}
-            onChange={(e) => setPresetName(e.target.value)}
-            placeholder="Название фильтра"
-            className="min-w-[220px] rounded-lg border border-slate-300 px-3 py-2 text-sm"
-          />
-          <Button type="button" variant="primary" onClick={saveCurrentPreset}>
-            Сохранить фильтр
+        <div className="flex items-end gap-2 lg:col-span-5">
+          <Button type="submit" variant="primary">
+            Искать
+          </Button>
+          <Button type="button" variant="outline" onClick={resetFilters}>
+            Сбросить
           </Button>
           {mode === "reports" && (
             <Button
@@ -390,25 +353,7 @@ export function AdminOrdersPanel({ mode = "orders" }: { mode?: PanelMode }) {
             </Button>
           )}
         </div>
-        {presets.length > 0 && (
-          <ul className="mt-3 flex flex-wrap gap-2">
-            {presets.map((p) => (
-              <li key={p.id} className="flex items-center gap-1">
-                <Button type="button" variant="outline" size="sm" onClick={() => applyPreset(p.id)}>
-                  {p.name}
-                </Button>
-                <button
-                  type="button"
-                  onClick={() => deletePreset(p.id)}
-                  className="rounded-md px-2 py-1 text-xs text-slate-500 hover:bg-slate-100"
-                >
-                  ✕
-                </button>
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
+      </form>
 
       {saveError && (
         <p className="rounded-xl bg-amber-50 p-4 text-sm text-amber-900">{saveError}</p>
@@ -435,7 +380,9 @@ export function AdminOrdersPanel({ mode = "orders" }: { mode?: PanelMode }) {
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-800">
+                  <span
+                    className={`rounded-full px-3 py-1 text-xs font-medium ${statusBadgeClass(order.status)}`}
+                  >
                     {statusLabel(order.status)}
                   </span>
                   <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700">

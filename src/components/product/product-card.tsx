@@ -37,11 +37,12 @@ export function ProductCard({ product }: { product: Product }) {
           В наличии: {product.inStock}
         </p>
       </Link>
-      <div className="mt-auto flex gap-2 p-4 pt-3">
+      <div className="mt-auto grid grid-cols-2 gap-2 p-4 pt-3 sm:flex">
         <Button
           variant="primary"
           size="sm"
           fullWidth
+          className="col-span-2 sm:col-span-1"
           onClick={(e) => {
             animateToCartFromButton(e.currentTarget);
             addItem(product);
@@ -49,10 +50,13 @@ export function ProductCard({ product }: { product: Product }) {
         >
           В корзину
         </Button>
-        <CompareToggleButton slug={product.slug} />
+        <CompareToggleButton
+          slug={product.slug}
+          className="w-full justify-center sm:w-auto"
+        />
         <Link
           href={`/product/${product.slug}`}
-          className="flex shrink-0 items-center justify-center rounded-lg border border-slate-200 px-3 text-xs font-medium text-slate-600 transition-colors duration-200 hover:bg-slate-50"
+          className="flex items-center justify-center rounded-lg border border-slate-200 px-3 text-xs font-medium text-slate-600 transition-colors duration-200 hover:bg-slate-50 sm:shrink-0"
         >
           →
         </Link>

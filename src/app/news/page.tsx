@@ -5,6 +5,15 @@ import { listNews } from "@/lib/content/news";
 export const metadata: Metadata = {
   title: "Новости",
   description: "Новости и обновления компании Стеллаж Комплект.",
+  alternates: {
+    canonical: "/news",
+  },
+  openGraph: {
+    title: "Новости — Стеллаж Комплект",
+    description: "Обновления ассортимента, склад, отгрузки и полезные заметки.",
+    url: "/news",
+    type: "website",
+  },
 };
 
 const ITEMS_PER_PAGE = 10;

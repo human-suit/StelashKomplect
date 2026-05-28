@@ -34,10 +34,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: product.name,
     description,
+    alternates: {
+      canonical: `/product/${product.slug}`,
+    },
     openGraph: {
       title: product.name,
       description,
+      url: `/product/${product.slug}`,
+      type: "website",
       images: product.image ? [{ url: product.image }] : undefined,
+    },
+    twitter: {
+      card: "summary",
+      title: product.name,
+      description,
+      images: product.image ? [product.image] : undefined,
     },
   };
 }
@@ -46,9 +57,38 @@ export default async function ProductPage({ params }: Props) {
   const { slug } = await params;
   const product = await getProductBySlugFromContent(slug);
   if (!product) notFound();
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name,
+    image: product.image ? [product.image] : undefined,
+    description: Object.entries(product.specs)
+      .slice(0, 4)
+      .map(([k, v]) => `${k}: ${v}`)
+      .join(", "),
+    sku: product.slug,
+    brand: {
+      "@type": "Brand",
+      name: "Стеллаж Комплект",
+    },
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "RUB",
+      price: product.price,
+      availability:
+        product.inStock > 0
+          ? "https://schema.org/InStock"
+          : "https://schema.org/OutOfStock",
+      url: `https://stellazhkomplect.ru/product/${product.slug}`,
+    },
+  };
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
       <nav className="mb-4 text-sm text-slate-500">
         <Link href="/catalog" className="hover:text-[var(--color-primary)]">
           Каталог

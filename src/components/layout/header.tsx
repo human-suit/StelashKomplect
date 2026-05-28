@@ -98,18 +98,24 @@ export function Header() {
         )}
       >
         <ul className="mx-auto flex max-w-7xl flex-col px-4 py-2 lg:flex-row lg:gap-6 lg:py-0">
+          <li className="px-1 py-2 text-[11px] font-semibold uppercase tracking-wide text-slate-600 lg:hidden">
+            Официальный дилер · Гарантия и документы
+          </li>
           {navLinks.map((link) => (
-            <li key={link.href}>
+            <li
+              key={link.href}
+              className="border-b border-slate-300 last:border-b-0 lg:border-b-0"
+            >
               <Link
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="block py-3 text-sm font-medium text-slate-700 transition-colors duration-200 hover:text-[var(--color-primary)] lg:py-3"
+                className="block px-1 py-3 text-sm font-medium text-slate-700 transition-colors duration-200 hover:text-[var(--color-primary)] lg:px-0 lg:py-3"
               >
                 {link.label}
               </Link>
             </li>
           ))}
-          <li className="border-t border-slate-100 py-3 lg:hidden lg:border-0">
+          <li className="border-t border-slate-300 py-3 lg:hidden lg:border-0">
             <CitySelector />
           </li>
         </ul>

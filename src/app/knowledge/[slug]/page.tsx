@@ -17,16 +17,53 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const item = await getKnowledgeBySlug(slug);
   if (!item) return { title: "Статья" };
-  return { title: item.title, description: item.excerpt };
+  return {
+    title: item.title,
+    description: item.excerpt,
+    alternates: {
+      canonical: `/knowledge/${item.slug}`,
+    },
+    openGraph: {
+      title: item.title,
+      description: item.excerpt,
+      type: "article",
+      url: `/knowledge/${item.slug}`,
+    },
+    twitter: {
+      card: "summary",
+      title: item.title,
+      description: item.excerpt,
+    },
+  };
 }
 
 export default async function KnowledgeArticlePage({ params }: Props) {
   const { slug } = await params;
   const item = await getKnowledgeBySlug(slug);
   if (!item) notFound();
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: item.title,
+    description: item.excerpt,
+    articleSection: item.category,
+    mainEntityOfPage: `https://stellazhkomplect.ru/knowledge/${item.slug}`,
+    author: {
+      "@type": "Organization",
+      name: "Стеллаж Комплект",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Стеллаж Комплект",
+    },
+  };
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <p className="text-xs font-semibold uppercase tracking-wide text-[var(--color-primary)]">
         {item.category}
       </p>

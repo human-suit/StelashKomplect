@@ -7,6 +7,24 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Каталог",
+  description:
+    "Каталог металлических стеллажей, сейфов, шкафов и мебели для склада и офиса. Актуальные цены и наличие.",
+  alternates: {
+    canonical: "/catalog",
+  },
+  openGraph: {
+    title: "Каталог продукции — Стеллаж Комплект",
+    description:
+      "Подбор металлической мебели, стеллажей и сейфов с доставкой по Уфе и России.",
+    url: "/catalog",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Каталог продукции — Стеллаж Комплект",
+    description:
+      "Стеллажи, сейфы и металлическая мебель с актуальными ценами и наличием.",
+  },
 };
 
 export default async function CatalogPage() {

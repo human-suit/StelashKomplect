@@ -6,6 +6,16 @@ export const metadata: Metadata = {
   title: "База знаний",
   description:
     "Статьи о выборе стеллажей и сейфов, доставке, гарантии и работе с юрлицами.",
+  alternates: {
+    canonical: "/knowledge",
+  },
+  openGraph: {
+    title: "База знаний — Стеллаж Комплект",
+    description:
+      "Гайды и статьи о выборе металлической мебели, доставке, гарантии и документах.",
+    url: "/knowledge",
+    type: "website",
+  },
 };
 
 const ITEMS_PER_PAGE = 10;

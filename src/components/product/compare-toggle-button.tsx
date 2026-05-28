@@ -19,7 +19,7 @@ export function CompareToggleButton({
     <Button
       variant={has ? "secondary" : "outline"}
       size="sm"
-      className={cn(className)}
+      className={cn("whitespace-nowrap leading-none", className)}
       onClick={(e) => {
         if (!has) animateToCompareFromButton(e.currentTarget);
         toggle(slug);

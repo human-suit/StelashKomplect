@@ -63,6 +63,15 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
 
   return (
     <section className="relative overflow-hidden bg-slate-900">
+      <div
+        className="pointer-events-none absolute inset-0 opacity-20"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px)",
+          backgroundSize: "28px 28px",
+        }}
+        aria-hidden
+      />
       {/* Фоны — плавный кроссфейд */}
       <div className="pointer-events-none absolute inset-0" aria-hidden>
         {list.map((s, i) => (
