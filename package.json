@@ -2,6 +2,9 @@
   "name": "stellazh-komplekt",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "prisma generate && next build",
@@ -22,6 +25,10 @@
   "dependencies": {
     "@prisma/client": "^6.19.3",
     "@tailwindcss/postcss": "^4",
+    "@types/node": "20.19.41",
+    "@types/nodemailer": "^8.0.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
     "jspdf": "^4.2.1",
     "lucide-react": "^1.16.0",
     "next": "16.2.6",
@@ -34,10 +41,6 @@
     "zustand": "^5.0.13"
   },
   "devDependencies": {
-    "@types/node": "20.19.41",
-    "@types/nodemailer": "^8.0.0",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
     "tsx": "^4.22.3"
