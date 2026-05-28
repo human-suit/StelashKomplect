@@ -72,12 +72,18 @@ export function AdminAnalyticsPanel() {
             Данные за сегодня (временно in-memory)
           </p>
         </div>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           <ButtonLink href="/admin" variant="outline">
             Заявки
           </ButtonLink>
+          <ButtonLink href="/admin/reports" variant="outline">
+            Отчеты
+          </ButtonLink>
           <ButtonLink href="/admin/content" variant="outline">
             Контент
+          </ButtonLink>
+          <ButtonLink href="/admin/analytics" variant="outline">
+            Аналитика
           </ButtonLink>
           <Button type="button" variant="outline" onClick={logout}>
             Выйти

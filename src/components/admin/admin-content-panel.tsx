@@ -468,6 +468,12 @@ export function AdminContentPanel() {
           <ButtonLink href="/admin" variant="outline">
             Заявки
           </ButtonLink>
+          <ButtonLink href="/admin/reports" variant="outline">
+            Отчеты
+          </ButtonLink>
+          <ButtonLink href="/admin/content" variant="outline">
+            CMS
+          </ButtonLink>
           <ButtonLink href="/admin/analytics" variant="outline">
             Аналитика
           </ButtonLink>
